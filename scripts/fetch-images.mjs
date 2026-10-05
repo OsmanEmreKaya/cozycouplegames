@@ -23,6 +23,9 @@ const MAX_PORTRAIT_HEIGHT = 1100
 // Extra widths written next to each image for responsive srcset.
 const LANDSCAPE_WIDTHS = [400, 560, 720, 960]
 const PORTRAIT_WIDTHS = [140, 220, 320]
+// App icons (`"kind": "icon"`, used on cards for phone-only games) are square and small.
+const ICON_SIZE = 512
+const ICON_WIDTHS = [128, 256]
 
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
 fs.mkdirSync(outDir, { recursive: true })
@@ -38,9 +41,11 @@ for (const [slug, images] of Object.entries(manifest)) {
       const portrait = meta.height > meta.width
       await sharp(input)
         .resize(
-          portrait
-            ? { height: MAX_PORTRAIT_HEIGHT, withoutEnlargement: true }
-            : { width: MAX_WIDTH, withoutEnlargement: true },
+          image.kind === 'icon'
+            ? { width: ICON_SIZE, withoutEnlargement: true }
+            : portrait
+              ? { height: MAX_PORTRAIT_HEIGHT, withoutEnlargement: true }
+              : { width: MAX_WIDTH, withoutEnlargement: true },
         ) // aspect ratio is always preserved; nothing is cropped
         .webp({ quality: 80, effort: 6 })
         .toFile(out)
@@ -52,7 +57,9 @@ for (const [slug, images] of Object.entries(manifest)) {
     image.bytes = fs.statSync(out).size
 
     // Smaller copies for srcset, so phones and cards never download the full file.
-    const widths = (height > width ? PORTRAIT_WIDTHS : LANDSCAPE_WIDTHS).filter((w) => w < width)
+    const widths = (image.kind === 'icon' ? ICON_WIDTHS : height > width ? PORTRAIT_WIDTHS : LANDSCAPE_WIDTHS).filter(
+      (w) => w < width,
+    )
     for (const w of widths) {
       const variant = path.join(outDir, image.file.replace(/\.webp$/, `-${w}.webp`))
       if (force || !fs.existsSync(variant)) {
@@ -63,7 +70,7 @@ for (const [slug, images] of Object.entries(manifest)) {
 
     // Social preview (og:image) for landscape images. JPEG because not every platform
     // accepts WebP previews; 16:9 is kept as-is rather than cropped to 1.91:1.
-    if (width > height && images.indexOf(image) === 0) {
+    if (width > height && image.kind !== 'icon' && images.indexOf(image) === 0) {
       const og = path.join(outDir, image.file.replace(/\.webp$/, '-og.jpg'))
       if (force || !fs.existsSync(og)) {
         await sharp(out).resize({ width: 1200 }).jpeg({ quality: 82, mozjpeg: true }).toFile(og)

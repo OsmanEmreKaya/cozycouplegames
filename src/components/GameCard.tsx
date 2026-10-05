@@ -2,6 +2,7 @@ import type { Game } from '../data/types'
 import { Link } from '../lib/router'
 import { ArrowRight, HeartFilled } from './Doodles'
 import { GameMedia, Rating, TagList } from './bits'
+import { gameIcon, imageSrc, imageSrcSet } from '../data/images'
 import './cards.css'
 
 export function platformsLabel(platforms: string[], max = 3) {
@@ -25,20 +26,37 @@ export function GameCard({
   headingLevel?: 2 | 3
 }) {
   const H = `h${headingLevel}` as 'h2' | 'h3'
+  // Phone-only games show their official app icon on cards; the review page keeps the screenshots.
+  const icon = gameIcon(game.slug)
   return (
     <article className={`game-card tone-${tone % 4}${wide ? ' game-card--wide' : ''}`}>
       <div className="game-card__frame">
         <div className="game-card__pic">
-          <GameMedia
-            game={game}
-            className="game-card__img"
-            phoneSizes="(min-width: 1040px) 70px, (min-width: 680px) 9vw, 18vw"
-            sizes={
-              wide
-                ? '(min-width: 1040px) 600px, (min-width: 760px) 55vw, calc(100vw - 72px)'
-                : '(min-width: 1040px) 340px, (min-width: 680px) calc(50vw - 72px), calc(100vw - 72px)'
-            }
-          />
+          {icon ? (
+            <div className="game-card__img media-icon">
+              <img
+                src={imageSrc(icon)}
+                srcSet={imageSrcSet(icon)}
+                sizes="136px"
+                alt={icon.alt}
+                width={icon.width}
+                height={icon.height}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          ) : (
+            <GameMedia
+              game={game}
+              className="game-card__img"
+              phoneSizes="(min-width: 1040px) 70px, (min-width: 680px) 9vw, 18vw"
+              sizes={
+                wide
+                  ? '(min-width: 1040px) 600px, (min-width: 760px) 55vw, calc(100vw - 72px)'
+                  : '(min-width: 1040px) 340px, (min-width: 680px) calc(50vw - 72px), calc(100vw - 72px)'
+              }
+            />
+          )}
         </div>
         {tone % 4 === 1 && <span className="tape" aria-hidden />}
       </div>

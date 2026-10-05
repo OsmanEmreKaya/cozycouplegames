@@ -281,6 +281,23 @@
         320,
         507
       ]
+    },
+    {
+      "kind": "icon",
+      "file": "our-flower-garden-icon.webp",
+      "alt": "Our Flower Garden app icon: a smiling couple in straw hats holding flowers above a wooden sign with the game’s name.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/51/a9/8b51a977-5413-6303-e44d-3b42eed933e4/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291",
+      "store": "App Store",
+      "copyright": "Muhammed Baha Karadağlı",
+      "width": 512,
+      "height": 512,
+      "bytes": 34918,
+      "widths": [
+        128,
+        256,
+        512
+      ]
     }
   ],
   "gamepigeon": [
@@ -333,6 +350,23 @@
         220,
         320,
         619
+      ]
+    },
+    {
+      "kind": "icon",
+      "file": "gamepigeon-icon.webp",
+      "alt": "GamePigeon app icon: a green bird wearing a white game controller on its head against a dark navy background.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/04/21/700421dd-e834-d93c-5bca-4ad5fde95466/AppIcon-1x_U007emarketing-0-3-85-220-0.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/gamepigeon/id1124197642",
+      "store": "App Store",
+      "copyright": "Vitalii Zlotskii",
+      "width": 512,
+      "height": 512,
+      "bytes": 9832,
+      "widths": [
+        128,
+        256,
+        512
       ]
     }
   ]

@@ -2,6 +2,8 @@ import manifest from './images.json'
 
 /** An official image, downloaded and converted by scripts/fetch-images.mjs. */
 export interface GameImage {
+  /** 'icon' marks an app icon, shown on cards for phone-only games instead of screenshots. */
+  kind?: 'icon'
   file: string
   alt: string
   width: number
@@ -22,7 +24,11 @@ const images = manifest as Record<string, GameImage[]>
 
 export const IMAGE_DIR = '/images/games/'
 
-export const gameImages = (slug: string): GameImage[] => images[slug] ?? []
+/** Screenshots and promo art, in display order (excludes app icons). */
+export const gameImages = (slug: string): GameImage[] => (images[slug] ?? []).filter((i) => i.kind !== 'icon')
+
+/** The official app icon, only set for phone-only games. */
+export const gameIcon = (slug: string): GameImage | undefined => images[slug]?.find((i) => i.kind === 'icon')
 
 export const imageSrc = (img: GameImage) => IMAGE_DIR + img.file
 export const imageSrcSet = (img: GameImage) =>
