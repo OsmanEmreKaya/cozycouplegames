@@ -1,0 +1,62 @@
+/* Self-hosted fonts (SIL Open Font License). Only the latin subset is downloaded
+   for English pages thanks to unicode-range. Fraunces and Figtree are preloaded
+   by scripts/prerender.mjs. */
+@import '@fontsource-variable/figtree/wght.css';
+
+/* Handwritten notes: Caveat 600, Latin only (39 KB instead of 50 KB). */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('../assets/fonts/caveat-600-latin.woff2') format('woff2');
+}
+
+/* Headings: Fraunces trimmed to weights 500–600 with SOFT 100 baked in
+   (27 KB instead of 61 KB). Regenerate with scripts/subset-fonts.py. */
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500 600;
+  src: url('../assets/fonts/fraunces-soft-500-600-latin.woff2') format('woff2');
+}
+
+/* Metric-matched fallbacks: while the web fonts load, text is drawn in a local
+   font scaled to the same width and line metrics, so nothing jumps on swap.
+   Values were measured against the real fonts in the browser. */
+@font-face {
+  font-family: 'Fraunces Fallback';
+  src: local('Georgia Bold'), local('Georgia-Bold');
+  font-weight: 500 700;
+  size-adjust: 93.66%;
+  ascent-override: 104.63%;
+  descent-override: 27.76%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Figtree Fallback';
+  src: local('Arial'), local('ArialMT');
+  font-weight: 400 500;
+  size-adjust: 100.52%;
+  ascent-override: 94.51%;
+  descent-override: 24.87%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Figtree Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  font-weight: 600 700;
+  size-adjust: 100.52%;
+  ascent-override: 94.51%;
+  descent-override: 24.87%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Caveat Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  size-adjust: 70.35%;
+  ascent-override: 136.45%;
+  descent-override: 42.64%;
+  line-gap-override: 0%;
+}

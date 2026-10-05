@@ -1,0 +1,324 @@
+/* ---------- Review hero ---------- */
+.review-hero {
+  padding-block: 24px clamp(28px, 4vw, 48px);
+}
+.review-hero__grid {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  margin-top: 20px;
+}
+.review-hero__text .badge {
+  margin-bottom: 14px;
+}
+.review-hero__text .badge svg {
+  color: var(--blush-deep);
+}
+.review-hero__lede {
+  margin-top: 14px;
+  font-size: clamp(1.08rem, 1rem + 0.35vw, 1.2rem);
+  color: var(--ink-soft);
+  max-width: 36rem;
+}
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+.platforms li {
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.review-hero__byline {
+  margin-top: 18px;
+  font-size: 0.86rem;
+  color: var(--ink-faint);
+}
+.review-hero__figure {
+  margin: 0;
+}
+.review-hero__media {
+  position: relative;
+  box-sizing: content-box;
+  aspect-ratio: 16 / 9;
+  padding: 10px;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.review-hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-lg) - 8px);
+  overflow: hidden;
+}
+.review-hero__media.is-phones {
+  aspect-ratio: 4 / 3;
+  background: var(--sage-soft);
+}
+.review-hero__credit {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  text-align: right;
+}
+.review-hero__credit a {
+  color: inherit;
+}
+.review-hero__sparkle {
+  position: absolute;
+  width: 34px;
+  left: -14px;
+  bottom: 18%;
+  color: #c9a24c;
+}
+@media (min-width: 880px) {
+  .review-hero__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+}
+
+/* ---------- Layout ---------- */
+.review-layout {
+  display: grid;
+  gap: 40px;
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .review-layout {
+    grid-template-columns: 320px 1fr;
+    gap: 64px;
+  }
+  .facts {
+    position: sticky;
+    top: 92px;
+  }
+}
+
+/* ---------- Fact sheet ---------- */
+.facts {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.facts__title {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+.facts dl {
+  margin-bottom: 18px;
+}
+.facts__row {
+  padding-block: 11px;
+  border-bottom: 1px dashed var(--line);
+}
+.facts__row dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.facts__row dd {
+  margin: 3px 0 0;
+  font-size: 0.97rem;
+  line-height: 1.45;
+}
+.facts__row--score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px;
+  margin-inline: -8px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--blush-soft);
+}
+.facts__row--score dd {
+  margin: 0;
+}
+.facts__free {
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+.facts__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+/* ---------- Body ---------- */
+.review-body {
+  max-width: 680px;
+}
+.review-body > section + section,
+.review-body > section + p {
+  margin-top: 44px;
+}
+.review-body.prose h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+}
+.review-body section > p + p {
+  margin-top: 1em;
+}
+.h-doodle {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  color: var(--blush-deep);
+}
+.review-body .checks li {
+  font-size: 1.05rem;
+}
+
+.note-card {
+  padding: 24px;
+  border-radius: var(--radius-lg);
+}
+.note-card--sage {
+  background: var(--sage-soft);
+}
+.note-card--sage .h-doodle {
+  color: var(--sage-deep);
+}
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pill-list li {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--paper);
+  font-weight: 500;
+  font-size: 0.97rem;
+}
+.mood-links {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.know-list {
+  display: grid;
+  gap: 12px;
+}
+.know-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.know-list svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  color: var(--accent);
+}
+
+.verdict {
+  position: relative;
+  padding: 28px 26px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--peach-soft);
+}
+.verdict p {
+  font-size: 1.08rem;
+}
+.verdict__scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(163, 93, 78, 0.3);
+}
+.verdict__scores > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.verdict__label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.verdict__num {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.verdict__num svg {
+  width: 22px;
+  height: 22px;
+  color: #c9a24c;
+  fill: var(--butter);
+}
+.verdict__num small {
+  font-size: 0.95rem;
+  color: var(--ink-faint);
+}
+.verdict__sign {
+  margin-top: 16px;
+  font-size: 1.3rem !important;
+  color: var(--accent);
+}
+.also-in {
+  color: var(--ink-soft);
+}
+
+/* ---------- Similar ---------- */
+.similar {
+  margin-top: var(--section);
+  background: var(--cream-deep);
+  border-top: 1px solid var(--line);
+}
+.similar + * {
+  margin-top: 0;
+}
+.similar-grid {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 680px) {
+  .similar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .similar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+body:has(.similar) .site-footer {
+  margin-top: 0;
+}
+.note-card--sage a {
+  color: var(--accent-hover);
+}

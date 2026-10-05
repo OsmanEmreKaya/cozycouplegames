@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fbf6ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // /games?mood=… is prerendered unfiltered. Hide the list until the filter applies,
+      // so cards don't visibly reflow (with a safety timeout in case scripts fail).
+      if (/^\/games\/?$/.test(location.pathname) && /[?&]mood=/.test(location.search)) {
+        document.documentElement.classList.add('mood-pending')
+        setTimeout(function () { document.documentElement.classList.remove('mood-pending') }, 3000)
+      }
+    </script>
+    <!--app-head-->
+  </head>
+  <body>
+    <div id="root"><!--app-html--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

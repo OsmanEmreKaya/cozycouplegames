@@ -1,0 +1,339 @@
+{
+  "stardew-valley": [
+    {
+      "file": "stardew-valley.webp",
+      "alt": "A Stardew Valley farm in summer: a wooden farmhouse with a red roof, a barn and coop, chickens and a cow in the yard, and neat rows of crops with scarecrows.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_b887651a93b0525739049eb4194f633de2df75be.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "store": "Steam",
+      "copyright": "ConcernedApe",
+      "width": 1280,
+      "height": 720,
+      "bytes": 206210,
+      "og": "stardew-valley-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "it-takes-two": [
+    {
+      "file": "it-takes-two.webp",
+      "alt": "Cody and May, the two playable characters in It Takes Two, each riding a giant frog in front of a wooden sign that reads “Taxi”.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/ss_a15164ddd357ab3c0b2aff575a6b215b2d91b406.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1426210/It_Takes_Two/",
+      "store": "Steam",
+      "copyright": "Hazelight Studios / Electronic Arts",
+      "width": 1280,
+      "height": 720,
+      "bytes": 121680,
+      "og": "it-takes-two-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "unravel-two": [
+    {
+      "file": "unravel-two.webp",
+      "alt": "Two Yarnys tied together by one thread: a red Yarny holds on to a mossy fallen tree while a blue Yarny dangles below it above a forest stream.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1225570/ss_1b80ad222f28236cac60f9b0984f435818d398b9.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1225570/Unravel_Two/",
+      "store": "Steam",
+      "copyright": "Coldwood Interactive / Electronic Arts",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84638,
+      "og": "unravel-two-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "overcooked-all-you-can-eat": [
+    {
+      "file": "overcooked-all-you-can-eat.webp",
+      "alt": "Top-down view of a poolside kitchen in Overcooked! All You Can Eat, with chefs working at counters that wrap around two swimming pools.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1243830/ss_d4c4c3b36b48a1d9ff754b6be0b4ac97d7acd986.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1243830/Overcooked_All_You_Can_Eat/",
+      "store": "Steam",
+      "copyright": "Ghost Town Games / Team17",
+      "width": 1280,
+      "height": 720,
+      "bytes": 119728,
+      "og": "overcooked-all-you-can-eat-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "spiritfarer": [
+    {
+      "file": "spiritfarer.webp",
+      "alt": "Stella and her cat Daffodil in a small canoe with Gwen, a deer spirit, on still red water beneath pale pink trees.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/972660/ss_cb5c5af0cdef3ec3a5317c162c32e956ec7aa76b.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/",
+      "store": "Steam",
+      "copyright": "Thunder Lotus Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 44358,
+      "og": "spiritfarer-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "sky-children-of-the-light": [
+    {
+      "file": "sky-children-of-the-light.webp",
+      "alt": "Two Sky players in blue and green capes sharing a glowing umbrella in the rain, looking toward a rainbow in a misty forest.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000028614/3128d38139c953e5f6cc7d511cfb0f0f682c2ad5fdaa48d3c6d81d4ae71016c6",
+      "page": "https://www.nintendo.com/us/store/products/sky-children-of-the-light-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "thatgamecompany",
+      "width": 1280,
+      "height": 720,
+      "bytes": 44816,
+      "og": "sky-children-of-the-light-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "palia": [
+    {
+      "file": "palia.webp",
+      "alt": "A Palia player holding a long farming tool in a vegetable garden full of tomato plants, leafy greens and orange root vegetables.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2707930/ss_a6e07185983c22eb49a9fa5d8c758faf93bea38d.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/2707930/Palia/",
+      "store": "Steam",
+      "copyright": "Singularity 6",
+      "width": 1280,
+      "height": 720,
+      "bytes": 154834,
+      "og": "palia-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "minecraft": [
+    {
+      "file": "minecraft.webp",
+      "alt": "A Minecraft landscape of blocky hills covered in pine trees and pink cherry blossom trees under a blue sky.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000000964/fe30a072a38e1c83abca8ad0987d40cb054da8bdb684d8b59562e07aaceb1e84",
+      "page": "https://www.nintendo.com/us/store/products/minecraft-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Mojang Studios / Microsoft",
+      "width": 1280,
+      "height": 720,
+      "bytes": 201744,
+      "og": "minecraft-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "animal-crossing-new-horizons": [
+    {
+      "file": "animal-crossing-new-horizons.webp",
+      "alt": "Three Animal Crossing players at night: two sit on a park bench eating cotton candy while a third walks up stone steps toward them, with fireworks in the sky.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000027619/0f7818c241ac1eadc1429bde3bf28ca51c91ebec22ac77aace94c27dac1befdb",
+      "page": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Nintendo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 84224,
+      "og": "animal-crossing-new-horizons-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "mario-kart-8-deluxe": [
+    {
+      "file": "mario-kart-8-deluxe.webp",
+      "alt": "Mario in his red kart on Battle Course 1, holding a feather with balloons tied to the kart, as Yoshi and Peach drive behind him.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000000153/8b68db89ebaec328ce0d4088c559043db1759140fb97f2f4d8eed8a61e4a4cc5",
+      "page": "https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Nintendo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 86686,
+      "og": "mario-kart-8-deluxe-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "snipperclips": [
+    {
+      "file": "snipperclips.webp",
+      "alt": "Snipperclips characters Clip and Snip stacked on top of each other so Clip can carry a ball toward a basketball hoop on a graph-paper background.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000000142/5e436c79b940e7f83c6888b69ed5819551150d7cae9745ea649ca3a1109a06d1",
+      "page": "https://www.nintendo.com/us/store/products/snipperclips-cut-it-out-together-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Nintendo / SFB Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 91328,
+      "og": "snipperclips-og.jpg",
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "our-flower-garden": [
+    {
+      "file": "our-flower-garden-1.webp",
+      "alt": "Our Flower Garden on iPhone: two players stand outside a small cottage above rows of red, white, purple and yellow flowers, under the caption “Grow a cozy garden together”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/77/f8/aa/77f8aae0-e5d8-6d91-d36b-32eccf1241bd/SS1_ENGe.png/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291",
+      "store": "App Store",
+      "copyright": "Muhammed Baha Karadağlı",
+      "width": 507,
+      "height": 1100,
+      "bytes": 88664,
+      "widths": [
+        140,
+        220,
+        320,
+        507
+      ]
+    },
+    {
+      "file": "our-flower-garden-2.webp",
+      "alt": "A greenhouse planted with rows of sunflowers, with both players’ avatars below and the caption “Plant, water, and harvest side by side”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/7f/e4/0a7fe4d8-8b59-540f-5ff9-10907dedf2d6/SS2_ENGe.png/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291",
+      "store": "App Store",
+      "copyright": "Muhammed Baha Karadağlı",
+      "width": 507,
+      "height": 1100,
+      "bytes": 68040,
+      "widths": [
+        140,
+        220,
+        320,
+        507
+      ]
+    },
+    {
+      "file": "our-flower-garden-3.webp",
+      "alt": "A flower order screen with a smiling customer at the shop counter, a Submit Order button and the caption “Complete orders and grow as a team!”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/1d/c6/9e1dc61d-4d32-3fb6-7396-9c5c7d7edb32/SS3_ENGe.png/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291",
+      "store": "App Store",
+      "copyright": "Muhammed Baha Karadağlı",
+      "width": 507,
+      "height": 1100,
+      "bytes": 66562,
+      "widths": [
+        140,
+        220,
+        320,
+        507
+      ]
+    }
+  ],
+  "gamepigeon": [
+    {
+      "file": "gamepigeon-1.webp",
+      "alt": "An iMessage chat where one person asks “Up for a little game?”, the other replies “Absolutely!”, and an 8-ball game invite sits above the GamePigeon game picker.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/32/12/55/321255e2-974f-5dbf-95af-3e40822c7ba6/pr_source.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/gamepigeon/id1124197642",
+      "store": "App Store",
+      "copyright": "Vitalii Zlotskii",
+      "width": 619,
+      "height": 1100,
+      "bytes": 52412,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "gamepigeon-2.webp",
+      "alt": "A GamePigeon darts match inside iMessage, with a dartboard and both players’ scores at 301.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/5b/61/be/5b61be1e-d6b9-9ef3-a9f8-3b7bfce64eee/pr_source.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/gamepigeon/id1124197642",
+      "store": "App Store",
+      "copyright": "Vitalii Zlotskii",
+      "width": 619,
+      "height": 1100,
+      "bytes": 60068,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "gamepigeon-3.webp",
+      "alt": "A GamePigeon 8-ball game inside iMessage, viewed from above on a green pool table.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/af/8e/90/af8e9097-75f8-59b7-7dd8-c321585a35ca/pr_source.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/gamepigeon/id1124197642",
+      "store": "App Store",
+      "copyright": "Vitalii Zlotskii",
+      "width": 619,
+      "height": 1100,
+      "bytes": 27472,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    }
+  ]
+}

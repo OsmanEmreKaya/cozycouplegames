@@ -1,0 +1,74 @@
+.author {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  scroll-margin-top: 90px;
+}
+.author__photo {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--paper);
+  box-shadow: var(--shadow-sm);
+}
+.author__photo--initial {
+  display: grid;
+  place-items: center;
+  background: var(--peach);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--ink);
+}
+.author__photo--logo {
+  display: grid;
+  place-items: center;
+  background: var(--cream-deep);
+}
+.author__name {
+  font-size: 1.15rem;
+}
+.author__bio {
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+.author .author__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 8px;
+  padding: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.about-author {
+  margin-top: 40px;
+  padding: 22px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  border: 1px dashed var(--line-strong);
+}
+.about-author__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  color: var(--blush-deep);
+}
+.about-author__label svg {
+  width: 18px;
+  height: 18px;
+}
+.authors-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 1.2em;
+}
+.author .author__links li {
+  margin: 0;
+}
