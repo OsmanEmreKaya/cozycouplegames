@@ -1,7 +1,45 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "--port", "5173", "--strictPort"], "port": 5173 },
-    { "name": "preview", "runtimeExecutable": "npm", "runtimeArgs": ["run", "preview", "--", "--port", "4173", "--strictPort"], "port": 4173 }
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5173",
+        "--strictPort"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4173",
+        "--strictPort"
+      ],
+      "port": 4173
+    },
+    {
+      "name": "cloudflare",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "wrangler@4.20.0",
+        "dev",
+        "--port",
+        "8787",
+        "--ip",
+        "127.0.0.1"
+      ],
+      "port": 8787
+    }
   ]
 }

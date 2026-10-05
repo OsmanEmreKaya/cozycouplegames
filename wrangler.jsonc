@@ -1,0 +1,13 @@
+// Cloudflare deploy config: serves the prerendered static site from dist/ (no Worker code).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cozycouplegames",
+  "compatibility_date": "2026-10-05",
+  "assets": {
+    "directory": "./dist",
+    // games/stardew-valley.html is served at /games/stardew-valley (no trailing-slash redirect).
+    "html_handling": "auto-trailing-slash",
+    // Unknown URLs get dist/404.html with a real 404 status.
+    "not_found_handling": "404-page"
+  }
+}

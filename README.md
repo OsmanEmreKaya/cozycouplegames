@@ -58,10 +58,14 @@ accepts WebP previews.
 
 ## Deploying
 
-Upload `dist/` to any static host. Each route is a flat file (`games/stardew-valley.html`), which Cloudflare Pages, Netlify
-and GitHub Pages serve at `/games/stardew-valley` without redirecting. On Vercel, add `{"cleanUrls": true, "trailingSlash": false}`
-to `vercel.json`. Make sure the host serves `404.html` with a 404 status, and pick one canonical host (`https://cozycouplegames.com`,
-no `www`) with a single 301 from the others so there are no redirect chains.
+**Cloudflare (current setup):** build command `npm run build`, deploy command `npx wrangler deploy`.
+`wrangler.jsonc` serves `dist/` as static assets: `games/stardew-valley.html` is served at
+`/games/stardew-valley`, the `.html` and trailing-slash variants 307 to it, and unknown URLs get
+`404.html` with a real 404 status. `.node-version` pins Node 22, which current Wrangler requires.
+
+Other static hosts work too: upload `dist/`. On Vercel, add `{"cleanUrls": true, "trailingSlash": false}`
+to `vercel.json`. Pick one canonical host (`https://cozycouplegames.com`, no `www`) with a single 301
+from the others so there are no redirect chains.
 
 After the first deploy: verify the domain in Google Search Console (DNS verification is simplest) and submit
 `https://cozycouplegames.com/sitemap.xml`.
