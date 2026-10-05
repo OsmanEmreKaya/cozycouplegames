@@ -387,6 +387,7 @@
 }
 .pick-item__media {
   position: relative;
+  min-width: 0;
   box-sizing: content-box;
   aspect-ratio: 16 / 9;
   background: var(--sage-soft);
@@ -404,6 +405,8 @@
 }
 .pick-item__media > svg,
 .pick-item__media > img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
