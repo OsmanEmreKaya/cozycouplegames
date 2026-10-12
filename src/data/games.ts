@@ -51,7 +51,7 @@ export const games: Game[] = [
       verdict: 'Easy to start, easy to keep up, and it gives you a reason to check in with each other every day. It won’t replace a bigger co-op game, but it fills the days between them. Our first pick for long-distance couples.',
     },
     similar: ['sky-children-of-the-light', 'stardew-valley', 'palia'],
-    updated: '2026-09-28',
+    updated: '2026-10-05',
   },
   {
     slug: 'stardew-valley',
@@ -97,7 +97,7 @@ export const games: Game[] = [
       verdict: 'Still the standard for cozy co-op. If you only play one game together, this is a good one to pick.',
     },
     similar: ['palia', 'animal-crossing-new-horizons', 'our-flower-garden'],
-    updated: '2026-09-21',
+    updated: '2026-10-05',
   },
   {
     slug: 'it-takes-two',
@@ -142,7 +142,7 @@ export const games: Game[] = [
       verdict: 'The best story-driven co-op game for couples. Not cozy in the blanket sense, but you’ll remember a lot of it.',
     },
     similar: ['unravel-two', 'snipperclips', 'overcooked-all-you-can-eat'],
-    updated: '2026-09-14',
+    updated: '2026-10-05',
   },
   {
     slug: 'sky-children-of-the-light',
@@ -187,7 +187,7 @@ export const games: Game[] = [
       verdict: 'Beautiful, free and cross-platform. If you live apart, put this near the top of your list.',
     },
     similar: ['our-flower-garden', 'palia', 'spiritfarer'],
-    updated: '2026-09-07',
+    updated: '2026-10-05',
   },
   {
     slug: 'unravel-two',
@@ -231,7 +231,7 @@ export const games: Game[] = [
       verdict: 'A short, well-made co-op platformer. Not deep, but a good choice for a rainy weekend.',
     },
     similar: ['it-takes-two', 'snipperclips', 'spiritfarer'],
-    updated: '2026-08-30',
+    updated: '2026-10-05',
   },
   {
     slug: 'animal-crossing-new-horizons',
@@ -276,7 +276,7 @@ export const games: Game[] = [
       verdict: 'Better as a shared hobby than a co-op game. If you like making a place feel like home, you’ll both get hooked.',
     },
     similar: ['stardew-valley', 'our-flower-garden', 'palia'],
-    updated: '2026-08-24',
+    updated: '2026-10-05',
   },
   {
     slug: 'minecraft',
@@ -321,7 +321,7 @@ export const games: Game[] = [
       verdict: 'A blank canvas that runs on everything. Turn on Peaceful, pick a view and start building.',
     },
     similar: ['stardew-valley', 'palia', 'animal-crossing-new-horizons'],
-    updated: '2026-08-17',
+    updated: '2026-10-05',
   },
   {
     slug: 'overcooked-all-you-can-eat',
@@ -365,7 +365,7 @@ export const games: Game[] = [
       verdict: 'Not cozy, but memorable. Play it in a good mood and take breaks.',
     },
     similar: ['it-takes-two', 'snipperclips', 'mario-kart-8-deluxe'],
-    updated: '2026-08-10',
+    updated: '2026-10-05',
   },
   {
     slug: 'snipperclips',
@@ -409,7 +409,7 @@ export const games: Game[] = [
       verdict: 'Our pick for a couple’s first co-op game. Charming, quick and over before it drags.',
     },
     similar: ['unravel-two', 'it-takes-two', 'overcooked-all-you-can-eat'],
-    updated: '2026-08-03',
+    updated: '2026-10-05',
   },
   {
     slug: 'spiritfarer',
@@ -453,7 +453,7 @@ export const games: Game[] = [
       verdict: 'One of the best-looking games around. Better as a story you share than a true co-op game, but worth it.',
     },
     similar: ['sky-children-of-the-light', 'stardew-valley', 'unravel-two'],
-    updated: '2026-07-27',
+    updated: '2026-10-05',
   },
   {
     slug: 'mario-kart-8-deluxe',
@@ -497,7 +497,7 @@ export const games: Game[] = [
       verdict: 'A classic for a reason. Keep it around for one-quick-race nights.',
     },
     similar: ['overcooked-all-you-can-eat', 'snipperclips', 'gamepigeon'],
-    updated: '2026-07-20',
+    updated: '2026-10-05',
   },
   {
     slug: 'gamepigeon',
@@ -541,7 +541,7 @@ export const games: Game[] = [
       verdict: 'Not deep, but one of the easiest ways to play together every day. If you both have iPhones, install it.',
     },
     similar: ['our-flower-garden', 'sky-children-of-the-light', 'mario-kart-8-deluxe'],
-    updated: '2026-07-13',
+    updated: '2026-10-05',
   },
   {
     slug: 'palia',
@@ -585,7 +585,7 @@ export const games: Game[] = [
       verdict: 'Free, cross-platform and calm. Good for evening calls with someone far away.',
     },
     similar: ['stardew-valley', 'our-flower-garden', 'sky-children-of-the-light'],
-    updated: '2026-07-06',
+    updated: '2026-10-05',
   },
 ]
 

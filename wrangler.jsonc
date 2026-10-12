@@ -3,6 +3,10 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cozycouplegames",
   "compatibility_date": "2026-10-05",
+  // Serve only on cozycouplegames.com, so no duplicate copy lives on *.workers.dev or preview URLs.
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "cozycouplegames.com", "custom_domain": true }],
   "assets": {
     "directory": "./dist",
     // games/stardew-valley.html is served at /games/stardew-valley (no trailing-slash redirect).
