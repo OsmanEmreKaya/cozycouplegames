@@ -5,7 +5,7 @@ import type { Game } from '../data/types'
  * token (the `pt` value in a campaign link). Paste it here to see installs per page.
  * Until then, installs from the site still show up in App Analytics as a Web Referrer.
  */
-export const APP_STORE_PROVIDER_TOKEN = ''
+export const APP_STORE_PROVIDER_TOKEN = '127517368'
 
 type StoreLink = NonNullable<Game['links']>[number] & { store: 'app-store' | 'google-play' }
 
