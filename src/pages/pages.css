@@ -466,6 +466,9 @@
   }
 }
 
+.guide__faq {
+  margin-top: 48px;
+}
 .guide__outro {
   position: relative;
   margin-top: 40px;

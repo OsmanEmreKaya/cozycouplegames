@@ -86,6 +86,22 @@ export function Guide({ guide }: { guide: GuideData }) {
           })}
         </ol>
 
+        {guide.faq && (
+          <section className="guide__faq" aria-labelledby="faq-title">
+            <h2 id="faq-title" className="faq__title">
+              Little questions
+            </h2>
+            <div className="faq">
+              {guide.faq.map((f) => (
+                <details key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
         <aside className="guide__outro">
           <HeartDoodle className="guide__outro-heart" />
           <p className="hand guide__outro-label">our two cents</p>

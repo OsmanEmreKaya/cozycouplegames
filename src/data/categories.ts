@@ -78,7 +78,7 @@ export const categories: Category[] = [
       'You already use your phones to stay in touch. These games turn a few spare minutes into something you do together.',
       'We only include games with real shared play. Many popular “couple games” are single-player apps with a leaderboard.',
     ],
-    games: ['our-flower-garden', 'sky-children-of-the-light', 'gamepigeon', 'minecraft'],
+    games: ['our-flower-garden', 'sky-children-of-the-light', 'gamepigeon', 'minecraft', 'words-with-friends-2', 'uno-mobile', 'pokemon-go'],
     lookFor: [
       { title: 'Real multiplayer', text: 'A shared world or shared progress, not just a leaderboard.' },
       { title: 'iPhone + Android', text: 'If you’re on different phones, check cross-platform support first.' },
@@ -91,10 +91,10 @@ export const categories: Category[] = [
       },
       {
         q: 'Are there couple games that work between iPhone and Android?',
-        a: 'Yes: Our Flower Garden, Sky: Children of the Light and Minecraft (Bedrock) all work across both.',
+        a: 'Yes: Our Flower Garden, Sky: Children of the Light, Minecraft (Bedrock), Words With Friends 2, UNO! and Pokémon GO all work across both.',
       },
     ],
-    guides: ['best-mobile-games-for-long-distance-couples', 'best-free-games-for-couples'],
+    guides: ['best-iphone-games-for-couples', 'best-android-games-for-couples', 'best-mobile-games-for-long-distance-couples', 'best-free-games-for-couples'],
   },
   {
     slug: 'long-distance-games',

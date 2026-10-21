@@ -260,6 +260,19 @@ export function resolveRoute(path: string): ResolvedRoute {
                 gamesBySlugs(guide.picks.map((p) => p.game)).map((g) => ({ name: g.title, path: `/games/${g.slug}` })),
               ),
             },
+            ...(guide.faq
+              ? [
+                  {
+                    '@context': 'https://schema.org',
+                    '@type': 'FAQPage',
+                    mainEntity: guide.faq.map((f) => ({
+                      '@type': 'Question',
+                      name: f.q,
+                      acceptedAnswer: { '@type': 'Answer', text: f.a },
+                    })),
+                  },
+                ]
+              : []),
             breadcrumbLd([
               { name: 'Home', path: '/' },
               { name: 'Guides', path: '/guides' },
