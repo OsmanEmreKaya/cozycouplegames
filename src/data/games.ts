@@ -20,10 +20,11 @@ export const games: Game[] = [
     developer: 'Muhammed Baha Karadağlı',
     art: 'garden',
     links: [
-      { label: 'App Store', url: 'https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291' },
+      { label: 'App Store', url: 'https://apps.apple.com/us/app/our-flower-garden-couple-game/id6751162291', store: 'app-store' },
       {
         label: 'Google Play',
         url: 'https://play.google.com/store/apps/details?id=com.bahakaradagli.ourflowergarden',
+        store: 'google-play',
       },
     ],
     review: {

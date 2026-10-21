@@ -7,6 +7,7 @@ import { SITE, absoluteUrl, breadcrumbLd, type PageMeta } from './lib/seo'
 import { authors, primaryAuthor } from './data/authors'
 import { IMAGE_DIR, gameImages } from './data/images'
 import { gameFaq } from './data/gameFaq'
+import { appStoreId } from './lib/stores'
 import { Home } from './pages/Home'
 import { GamesIndex } from './pages/GamesIndex'
 import { GameReview } from './pages/GameReview'
@@ -53,6 +54,9 @@ const itemList = (paths: { name: string; path: string }[]) => ({
   })),
 })
 
+/** The first recommended game on a page that's in the App Store, for the Smart App Banner. */
+const bannerFor = (slugs: string[]) => gamesBySlugs(slugs).map(appStoreId).find(Boolean)
+
 const faqLd = (faq: { q: string; a: string }[]) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -90,6 +94,7 @@ export function resolveRoute(path: string): ResolvedRoute {
         title: 'Cozy Couple Games — Games for Couples to Play Together',
         description: `Honest reviews of ${games.length} co-op games for couples: couch co-op, online, long-distance and mobile picks, each played together and rated for two.`,
         updated: siteUpdated,
+        appStoreId: bannerFor(['our-flower-garden']),
         jsonLd: [
           {
             '@context': 'https://schema.org',
@@ -147,6 +152,7 @@ export function resolveRoute(path: string): ResolvedRoute {
           type: 'article',
           title: `Is ${game.title} Good for Couples? Co-op Review`,
           updated: game.updated,
+          appStoreId: appStoreId(game),
           image: og ? IMAGE_DIR + og : undefined,
           description: gameDescription(game),
           jsonLd: [
@@ -196,6 +202,7 @@ export function resolveRoute(path: string): ResolvedRoute {
         path,
         title: category.seoTitle,
         updated: latest(list.map((g) => g.updated)),
+        appStoreId: bannerFor([...(category.spotlight ? [category.spotlight.game] : []), ...category.games]),
         description: category.description,
         jsonLd: [
           {
@@ -249,6 +256,7 @@ export function resolveRoute(path: string): ResolvedRoute {
           type: 'article',
           title,
           updated: guide.updated,
+          appStoreId: bannerFor(guide.picks.map((p) => p.game)),
           description: guide.description,
           jsonLd: [
             {

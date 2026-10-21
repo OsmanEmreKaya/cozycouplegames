@@ -3,6 +3,7 @@ import { featuredCategories, moods } from '../data/categories'
 import { guides } from '../data/guides'
 import { Link } from '../lib/router'
 import { HeroArt } from '../components/HeroArt'
+import { StoreBadges } from '../components/StoreBadges'
 import { GameCard, platformsLabel } from '../components/GameCard'
 import { CategoryCard, GuideCard, MoodLink } from '../components/Cards'
 import { Hearts, SectionHead, GameMedia } from '../components/bits'
@@ -148,9 +149,12 @@ export function Home() {
                 </div>
               </dl>
 
-              <Link to={`/games/${pick.slug}`} className="btn btn--primary">
-                See the game <ArrowRight />
-              </Link>
+              <div className="pick__actions">
+                <Link to={`/games/${pick.slug}`} className="btn btn--primary">
+                  See the game <ArrowRight />
+                </Link>
+                <StoreBadges game={pick} path="/" />
+              </div>
             </div>
           </div>
         </div>

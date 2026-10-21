@@ -8,6 +8,7 @@ import { Breadcrumbs, GameMedia, Hearts, TagList, formatDate } from '../componen
 import { ArrowRight, FlowerDoodle, HeartDoodle } from '../components/Doodles'
 import { platformsLabel } from '../components/GameCard'
 import { AboutTheAuthor, AuthorName } from '../components/Author'
+import { StoreBadges } from '../components/StoreBadges'
 import './pages.css'
 
 export function Guide({ guide }: { guide: GuideData }) {
@@ -73,6 +74,7 @@ export function Guide({ guide }: { guide: GuideData }) {
                     {platformsLabel(g.platforms, 4)} · {g.isFree ? 'Free' : 'Paid'}
                   </p>
                   <p>{p.note}</p>
+                  <StoreBadges game={g} path={`/guides/${guide.slug}`} className="pick-item__badges" />
                   <div className="pick-item__foot">
                     <TagList tags={g.tags} max={3} />
                     <Hearts value={g.coupleScore} />

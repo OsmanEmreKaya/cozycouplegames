@@ -1,6 +1,8 @@
 import type { Category as CategoryData } from '../data/categories'
 import { categories } from '../data/categories'
-import { gamesBySlugs } from '../data/games'
+import { gamesBySlugs, getGame } from '../data/games'
+import { gameIcon, imageSrc, imageSrcSet } from '../data/images'
+import { StoreBadges } from '../components/StoreBadges'
 import { getGuide } from '../data/guides'
 import type { Guide } from '../data/guides'
 import { Link } from '../lib/router'
@@ -14,6 +16,8 @@ export function Category({ category }: { category: CategoryData }) {
   const list = gamesBySlugs(category.games)
   const guides = category.guides.map(getGuide).filter((g): g is Guide => Boolean(g))
   const others = categories.filter((c) => c.slug !== category.slug)
+  const spotlight = category.spotlight ? getGame(category.spotlight.game) : undefined
+  const spotlightIcon = spotlight ? gameIcon(spotlight.slug) : undefined
 
   return (
     <>
@@ -36,6 +40,37 @@ export function Category({ category }: { category: CategoryData }) {
           <p key={i}>{p}</p>
         ))}
       </PageIntro>
+
+      {spotlight && (
+        <section className="container app-spotlight-wrap" aria-labelledby="spotlight-title">
+          <div className="app-spotlight">
+            {spotlightIcon && (
+              <img
+                className="app-spotlight__icon"
+                src={imageSrc(spotlightIcon)}
+                srcSet={imageSrcSet(spotlightIcon)}
+                sizes="96px"
+                alt={spotlightIcon.alt}
+                width={spotlightIcon.width}
+                height={spotlightIcon.height}
+              />
+            )}
+            <div className="app-spotlight__text">
+              <p className="app-spotlight__note hand">
+                <HeartDoodle /> {category.spotlight!.note}
+              </p>
+              <h2 id="spotlight-title">{spotlight.title}</h2>
+              <p>{spotlight.review.lede}</p>
+              <div className="app-spotlight__actions">
+                <StoreBadges game={spotlight} path={category.path} />
+                <Link to={`/games/${spotlight.slug}`} className="text-link">
+                  Read our review <ArrowRight />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section section--tight" aria-label={`${category.name} list`}>
         <div className="container">

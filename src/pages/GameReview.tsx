@@ -9,6 +9,7 @@ import { ArrowRight, CheckDoodle, FlowerDoodle, HeartDoodle, InfoDoodle, Sparkle
 import { AboutTheAuthor, AuthorName } from '../components/Author'
 import { gameImages } from '../data/images'
 import { gameFaq } from '../data/gameFaq'
+import { StoreBadges } from '../components/StoreBadges'
 import './review.css'
 
 export function GameReview({ game }: { game: Game }) {
@@ -117,9 +118,10 @@ export function GameReview({ game }: { game: Game }) {
             </div>
           </dl>
           <TagList tags={game.tags} max={6} />
-          {game.links && (
+          <StoreBadges game={game} path={`/games/${game.slug}`} className="facts__badges" />
+          {game.links?.some((l) => !l.store) && (
             <div className="facts__links">
-              {game.links.map((l) => (
+              {game.links.filter((l) => !l.store).map((l) => (
                 <a key={l.url} href={l.url} className="btn btn--soft btn--small" rel="noopener" target="_blank">
                   {l.label}
                   <span className="visually-hidden"> (opens in a new tab)</span>

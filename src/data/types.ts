@@ -68,7 +68,8 @@ export interface Game {
   developer: string
   /** Illustration used when no official image is available (see src/data/images.json). */
   art: ArtTheme
-  links?: { label: string; url: string }[]
+  /** Official pages. `store` marks App Store / Google Play listings, shown as badges with tracked links. */
+  links?: { label: string; url: string; store?: 'app-store' | 'google-play' }[]
   review: {
     lede: string
     why: string[]

@@ -19,6 +19,8 @@ export interface Category {
   lookFor: { title: string; text: string }[]
   faq: { q: string; a: string }[]
   guides: string[]
+  /** The game we recommend most on this page, shown above the list with store badges. */
+  spotlight?: { game: string; note: string }
 }
 
 export const categories: Category[] = [
@@ -109,6 +111,7 @@ export const categories: Category[] = [
       },
     ],
     guides: ['best-iphone-games-for-couples', 'best-android-games-for-couples', 'best-free-games-for-couples', 'best-mobile-games-for-long-distance-couples'],
+    spotlight: { game: 'our-flower-garden', note: 'our pick for two phones' },
   },
   {
     slug: 'long-distance-games',
@@ -156,6 +159,7 @@ export const categories: Category[] = [
       },
     ],
     guides: ['best-mobile-games-for-long-distance-couples', 'date-night-games-for-couples'],
+    spotlight: { game: 'our-flower-garden', note: 'our pick for different time zones' },
   },
 ]
 

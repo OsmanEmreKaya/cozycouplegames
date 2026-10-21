@@ -53,6 +53,9 @@ export function Footer() {
         <p className="site-footer__small">
           © {new Date().getFullYear()} Cozy Couple Games · Made with care, played on the couch.
         </p>
+        <p className="site-footer__legal">
+          App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.
+        </p>
       </div>
     </footer>
   )

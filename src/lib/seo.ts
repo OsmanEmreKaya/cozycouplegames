@@ -18,6 +18,8 @@ export interface PageMeta {
   /** ISO date the content last changed; used for the sitemap and article tags. */
   updated?: string
   jsonLd?: Record<string, unknown>[]
+  /** App Store id for Safari's Smart App Banner, on pages that recommend that app. */
+  appStoreId?: string
 }
 
 export const absoluteUrl = (path: string) => SITE.url + (path === '/' ? '/' : path)
@@ -42,6 +44,7 @@ export function renderHead(meta: PageMeta): string {
     `<meta name="description" content="${esc(meta.description)}" />`,
     `<link rel="canonical" href="${url}" />`,
     meta.noindex ? `<meta name="robots" content="noindex" />` : '',
+    meta.appStoreId ? `<meta name="apple-itunes-app" content="app-id=${meta.appStoreId}" />` : '',
     `<meta property="og:site_name" content="${SITE.name}" />`,
     `<meta property="og:type" content="${meta.type ?? 'website'}" />`,
     `<meta property="og:title" content="${esc(title)}" />`,

@@ -509,3 +509,111 @@
 .game-card:hover .media-icon img {
   transform: scale(1.04) rotate(-2deg);
 }
+
+/* ---------- Store badges ---------- */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+}
+.store-badge {
+  display: inline-flex;
+  border-radius: 9px;
+  line-height: 0;
+  transition: transform 0.2s var(--ease);
+}
+.store-badge:hover {
+  transform: translateY(-1px);
+}
+.store-badge:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.store-badge img {
+  display: block;
+  width: auto;
+}
+.store-badge--app-store img {
+  height: 44px;
+}
+/* The official Google Play PNG has 41 px of transparent padding around a 168 px tall badge;
+   offset it so both badges line up at the same visible height. */
+.store-badge--google-play img {
+  height: 65.5px;
+  margin: -10.7px;
+}
+
+/* App spotlight: the game we recommend most on a category page. */
+.app-spotlight-wrap {
+  margin-top: 8px;
+}
+.app-spotlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+.app-spotlight__icon {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: var(--shadow-sm);
+}
+.app-spotlight__note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--blush-deep);
+}
+.app-spotlight__note svg {
+  width: 18px;
+  height: 18px;
+}
+.app-spotlight h2 {
+  margin: 2px 0 6px;
+  font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.8rem);
+}
+.app-spotlight p {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+.app-spotlight__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 16px;
+}
+@media (max-width: 560px) {
+  .app-spotlight {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .app-spotlight__icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 17px;
+  }
+}
+
+.pick-item__badges {
+  margin: 14px 0 16px;
+}
+.facts__badges {
+  margin-top: 18px;
+}
+.pick__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 20px;
+}

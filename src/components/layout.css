@@ -370,3 +370,8 @@
   font-size: 0.88rem;
   color: var(--ink-faint);
 }
+.site-footer__legal {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
