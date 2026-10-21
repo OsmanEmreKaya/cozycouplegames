@@ -70,7 +70,7 @@ export const guides: Guide[] = [
     slug: 'relaxing-games-to-play-with-your-partner',
     title: 'Relaxing Games to Play With Your Partner',
     description:
-      'Calm, low-stress games to play with your partner after a long day. No timers and no shouting.',
+      'Calm, low-stress games to play with your partner after a long day, from Sky and Animal Crossing to Spiritfarer. No timers, no failing and no shouting.',
     excerpt: 'For evenings when you both want to unwind, not compete.',
     kicker: 'Unwind',
     published: '2026-10-05',
@@ -114,7 +114,7 @@ export const guides: Guide[] = [
     slug: 'best-free-games-for-couples',
     title: 'Best Free Games for Couples',
     description:
-      'Good free games for couples that are cozy, cross-platform and not pushy about payments.',
+      'The best free games for couples on iPhone, Android, PC and consoles: shared gardens, cozy online worlds and chat games that never push you to pay.',
     excerpt: 'Great games for two that don’t cost a thing to start.',
     kicker: 'Free',
     published: '2026-10-05',

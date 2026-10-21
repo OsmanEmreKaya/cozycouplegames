@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import type { Game } from './data/types'
 import { games, getGame, gamesBySlugs } from './data/games'
 import { categories, getCategory } from './data/categories'
 import { guides, getGuide, guideTitle } from './data/guides'
@@ -51,6 +52,21 @@ const itemList = (paths: { name: string; path: string }[]) => ({
   })),
 })
 
+/**
+ * Search snippet for a review: the blurb plus the facts people search for
+ * ("is X multiplayer", "free iphone games for couples"), kept under ~160 chars.
+ */
+function gameDescription(game: Game) {
+  const yes = (s: string) => !/^(No|Not needed)\b/.test(s)
+  const modes = [yes(game.online) && 'online', yes(game.local) && 'couch'].filter(Boolean).join(' and ')
+  const platforms = game.platforms.length > 3 ? 'most platforms' : game.platforms.join(' and ')
+  const cost = game.isFree ? 'free' : (game.price.match(/\$\d+/)?.[0].replace('$', 'about $') ?? 'paid')
+  const play = game.tags.includes('Competitive') ? 'multiplayer' : 'co-op'
+  const facts = `${modes ? `${modes[0].toUpperCase()}${modes.slice(1)} ${play}` : 'Co-op'} on ${platforms}, ${cost}.`
+  const full = `${game.blurb} ${facts} Our verdict for couples.`
+  return full.length <= 160 ? full : `${game.blurb} ${facts}`
+}
+
 export function resolveRoute(path: string): ResolvedRoute {
   if (path === '/') {
     return {
@@ -58,14 +74,16 @@ export function resolveRoute(path: string): ResolvedRoute {
       element: <Home />,
       meta: {
         path,
-        title: 'Cozy Couple Games — Cozy Games to Play Together',
-        description: SITE.description,
+        // Broader than /cozy-games, so the two pages don't compete for the same query.
+        title: 'Cozy Couple Games — Games for Couples to Play Together',
+        description: `Honest reviews of ${games.length} co-op games for couples: couch co-op, online, long-distance and mobile picks, each played together and rated for two.`,
         updated: siteUpdated,
         jsonLd: [
           {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: SITE.name,
+            alternateName: ['CozyCoupleGames', 'cozycouplegames.com'],
             url: SITE.url,
             description: SITE.description,
             publisher: organization,
@@ -115,10 +133,10 @@ export function resolveRoute(path: string): ResolvedRoute {
         meta: {
           path,
           type: 'article',
-          title: `${game.title} Review for Couples`,
+          title: `Is ${game.title} Good for Couples? Co-op Review`,
           updated: game.updated,
           image: og ? IMAGE_DIR + og : undefined,
-          description: `${game.blurb} Co-op details, price and our honest verdict for couples.`,
+          description: gameDescription(game),
           jsonLd: [
             {
               '@context': 'https://schema.org',
