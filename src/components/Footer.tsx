@@ -19,7 +19,7 @@ const siteLinks = [
  */
 const columns = [
   { title: 'Reviews', links: games.map((g) => ({ label: g.title, to: `/games/${g.slug}` })) },
-  { title: 'Guides', links: [...guides.map((g) => ({ label: guideTitle(g), to: `/guides/${g.slug}` })), { label: 'All guides', to: '/guides' }] },
+  { title: 'Guides', links: [...guides.map((g) => ({ label: guideTitle(g, { year: false }), to: `/guides/${g.slug}` })), { label: 'All guides', to: '/guides' }] },
   { title: 'Cozy Couple Games', links: siteLinks },
 ]
 

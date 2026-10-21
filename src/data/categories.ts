@@ -43,6 +43,7 @@ export const categories: Category[] = [
       'animal-crossing-new-horizons',
       'spiritfarer',
       'palia',
+      'disney-dreamlight-valley',
       'sky-children-of-the-light',
       'unravel-two',
     ],
@@ -70,19 +71,20 @@ export const categories: Category[] = [
     h1: 'Mobile games for couples',
     seoTitle: 'Best Mobile Games for Couples (iPhone & Android)',
     description:
-      'Phone games couples can actually play together: shared gardens, cross-platform worlds and mini-games inside your chats. Most are free.',
+      'The best phone games for couples on iPhone and Android, whether you’re side by side on the sofa or in different places. Most are free.',
     cardLine: 'Games for two that fit in your pocket.',
     icon: 'phone',
     tint: 'peach',
     intro: [
-      'You already use your phones to stay in touch. These games turn a few spare minutes into something you do together.',
-      'We only include games with real shared play. Many popular “couple games” are single-player apps with a leaderboard.',
+      'You already have the console in your pocket. These are the phone games that work best for two: some you play side by side on the sofa, some you keep going in the background of your day, and a few you play live together.',
+      'We only include games with real shared play. Many popular “couple games” on the App Store and Google Play are quizzes or single-player apps with a shared leaderboard.',
+      'Before you install anything, check two things: whether you’re both on iPhone or one of you is on Android, and whether you want something calm or a bit competitive. The cards below show both.',
     ],
-    games: ['our-flower-garden', 'sky-children-of-the-light', 'gamepigeon', 'minecraft', 'words-with-friends', 'uno-mobile', 'pokemon-go'],
+    games: ['our-flower-garden', 'sky-children-of-the-light', 'minecraft', 'gamepigeon', 'words-with-friends', 'uno-mobile', 'pokemon-go'],
     lookFor: [
       { title: 'Real multiplayer', text: 'A shared world or shared progress, not just a leaderboard.' },
-      { title: 'iPhone + Android', text: 'If you’re on different phones, check cross-platform support first.' },
-      { title: 'Kind monetisation', text: 'Free is great, as long as it doesn’t constantly nag you to pay.' },
+      { title: 'iPhone + Android', text: 'If you’re on different phones, check cross-platform support first. iMessage games like GamePigeon only work between iPhones.' },
+      { title: 'Kind monetisation', text: 'Free is great, as long as it doesn’t constantly nag you to pay. We note ads and purchases on every review.' },
     ],
     faq: [
       {
@@ -93,8 +95,20 @@ export const categories: Category[] = [
         q: 'Are there couple games that work between iPhone and Android?',
         a: 'Yes: Our Flower Garden, Sky: Children of the Light, Minecraft (Bedrock), Words With Friends, UNO! and Pokémon GO all work across both.',
       },
+      {
+        q: 'What are the best free phone games for couples?',
+        a: 'Our Flower Garden, Sky: Children of the Light, GamePigeon, Words With Friends, UNO! and Pokémon GO are all free to download. Minecraft is the only paid game on this page.',
+      },
+      {
+        q: 'What can we play on our phones sitting next to each other?',
+        a: 'Minecraft and Sky are great side by side. GamePigeon and UNO! are good for quick rounds, and Our Flower Garden for a few calm minutes before bed.',
+      },
+      {
+        q: 'What about phone games for long-distance couples?',
+        a: 'We have a separate guide to phone games for long-distance couples, with picks for different time zones and video-call dates.',
+      },
     ],
-    guides: ['best-iphone-games-for-couples', 'best-android-games-for-couples', 'best-mobile-games-for-long-distance-couples', 'best-free-games-for-couples'],
+    guides: ['best-iphone-games-for-couples', 'best-android-games-for-couples', 'best-free-games-for-couples', 'best-mobile-games-for-long-distance-couples'],
   },
   {
     slug: 'long-distance-games',
@@ -117,14 +131,19 @@ export const categories: Category[] = [
       'stardew-valley',
       'it-takes-two',
       'palia',
+      'split-fiction',
       'minecraft',
+      'valheim',
+      'portal-2',
+      'sea-of-thieves',
+      'moving-out-2',
       'gamepigeon',
       'overcooked-all-you-can-eat',
     ],
     lookFor: [
       { title: 'Asynchronous play', text: 'Games you can progress in separately help a lot across time zones.' },
       { title: 'Cross-platform', text: 'Different devices shouldn’t stop you. Several of these work almost anywhere.' },
-      { title: 'One copy, two players', text: 'It Takes Two’s Friend’s Pass means only one of you needs to buy it.' },
+      { title: 'One copy, two players', text: 'The Friend’s Pass in It Takes Two and Split Fiction means only one of you needs to buy the game.' },
     ],
     faq: [
       {
@@ -136,7 +155,7 @@ export const categories: Category[] = [
         a: 'Sky: Children of the Light. It’s free and works on phones, consoles and PC.',
       },
     ],
-    guides: ['best-mobile-games-for-long-distance-couples', 'relaxing-games-to-play-with-your-partner'],
+    guides: ['best-mobile-games-for-long-distance-couples', 'date-night-games-for-couples'],
   },
 ]
 

@@ -6,6 +6,7 @@ import { guides, getGuide, guideTitle } from './data/guides'
 import { SITE, absoluteUrl, breadcrumbLd, type PageMeta } from './lib/seo'
 import { authors, primaryAuthor } from './data/authors'
 import { IMAGE_DIR, gameImages } from './data/images'
+import { gameFaq } from './data/gameFaq'
 import { Home } from './pages/Home'
 import { GamesIndex } from './pages/GamesIndex'
 import { GameReview } from './pages/GameReview'
@@ -52,6 +53,16 @@ const itemList = (paths: { name: string; path: string }[]) => ({
   })),
 })
 
+const faqLd = (faq: { q: string; a: string }[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+})
+
 /**
  * Search snippet for a review: the blurb plus the facts people search for
  * ("is X multiplayer", "free iphone games for couples"), kept under ~160 chars.
@@ -59,7 +70,8 @@ const itemList = (paths: { name: string; path: string }[]) => ({
 function gameDescription(game: Game) {
   const yes = (s: string) => !/^(No|Not needed)\b/.test(s)
   const modes = [yes(game.online) && 'online', yes(game.local) && 'couch'].filter(Boolean).join(' and ')
-  const platforms = game.platforms.length > 3 ? 'most platforms' : game.platforms.join(' and ')
+  const platforms =
+    game.platforms.length > 3 ? 'most platforms' : game.platforms.join(', ').replace(/, ([^,]*)$/, ' and $1')
   const cost = game.isFree ? 'free' : (game.price.match(/\$\d+/)?.[0].replace('$', 'about $') ?? 'paid')
   const play = game.tags.includes('Competitive') ? 'multiplayer' : 'co-op'
   const facts = `${modes ? `${modes[0].toUpperCase()}${modes.slice(1)} ${play}` : 'Co-op'} on ${platforms}, ${cost}.`
@@ -162,6 +174,7 @@ export function resolveRoute(path: string): ResolvedRoute {
                   : undefined,
               },
             },
+            faqLd(gameFaq(game)),
             breadcrumbLd([
               { name: 'Home', path: '/' },
               { name: 'Reviews', path: '/games' },
@@ -193,15 +206,7 @@ export function resolveRoute(path: string): ResolvedRoute {
             description: category.description,
             mainEntity: itemList(list.map((g) => ({ name: g.title, path: `/games/${g.slug}` }))),
           },
-          {
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: category.faq.map((f) => ({
-              '@type': 'Question',
-              name: f.q,
-              acceptedAnswer: { '@type': 'Answer', text: f.a },
-            })),
-          },
+          faqLd(category.faq),
           breadcrumbLd([
             { name: 'Home', path: '/' },
             { name: category.name, path },
@@ -260,19 +265,7 @@ export function resolveRoute(path: string): ResolvedRoute {
                 gamesBySlugs(guide.picks.map((p) => p.game)).map((g) => ({ name: g.title, path: `/games/${g.slug}` })),
               ),
             },
-            ...(guide.faq
-              ? [
-                  {
-                    '@context': 'https://schema.org',
-                    '@type': 'FAQPage',
-                    mainEntity: guide.faq.map((f) => ({
-                      '@type': 'Question',
-                      name: f.q,
-                      acceptedAnswer: { '@type': 'Answer', text: f.a },
-                    })),
-                  },
-                ]
-              : []),
+            ...(guide.faq ? [faqLd(guide.faq)] : []),
             breadcrumbLd([
               { name: 'Home', path: '/' },
               { name: 'Guides', path: '/guides' },

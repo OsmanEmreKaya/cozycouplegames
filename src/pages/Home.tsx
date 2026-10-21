@@ -19,7 +19,9 @@ const featured = gamesBySlugs([
 
 export function Home() {
   const pick = getGame('our-flower-garden')!
-  const [leadGuide, ...moreGuides] = guides
+  const [leadGuide, ...otherGuides] = guides
+  // The newest few, so the section stays short as the guide list grows.
+  const moreGuides = [...otherGuides].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 4)
 
   return (
     <>

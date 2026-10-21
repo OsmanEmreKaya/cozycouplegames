@@ -583,5 +583,215 @@
         512
       ]
     }
+  ],
+  "split-fiction": [
+    {
+      "file": "split-fiction.webp",
+      "alt": "Split Fiction’s two heroes standing side by side in a jungle clearing, each with a small dragon perched on their shoulder.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/5e3f5393e455fad3b5fa3f2fe469d9ad6b519069/ss_5e3f5393e455fad3b5fa3f2fe469d9ad6b519069.1920x1080.jpg?t=1763484567",
+      "page": "https://store.steampowered.com/app/2001120/Split_Fiction/",
+      "store": "Steam",
+      "copyright": "Hazelight Studios / Electronic Arts",
+      "width": 1280,
+      "height": 720,
+      "bytes": 131086,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "split-fiction-og.jpg"
+    }
+  ],
+  "portal-2": [
+    {
+      "file": "portal-2.webp",
+      "alt": "A Portal 2 test chamber seen from above, with an orange portal on the wall and a glowing blue beam running across the room.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_6a4f5afdaa98402de9cf0b59fed27bab3256a6f4.1920x1080.jpg?t=1790187113",
+      "page": "https://store.steampowered.com/app/620/Portal_2/",
+      "store": "Steam",
+      "copyright": "Valve",
+      "width": 1280,
+      "height": 720,
+      "bytes": 93566,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "portal-2-og.jpg"
+    }
+  ],
+  "dont-starve-together": [
+    {
+      "file": "dont-starve-together.webp",
+      "alt": "Don’t Starve Together players tending a big walled vegetable farm with rows of crops, pumpkins and watermelons.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/ss_f863729856b94b3485ee80e6fd11289595f6634c.1920x1080.jpg?t=1790287771",
+      "page": "https://store.steampowered.com/app/322330/Dont_Starve_Together/",
+      "store": "Steam",
+      "copyright": "Klei Entertainment",
+      "width": 1280,
+      "height": 720,
+      "bytes": 204872,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "dont-starve-together-og.jpg"
+    }
+  ],
+  "disney-dreamlight-valley": [
+    {
+      "file": "disney-dreamlight-valley.webp",
+      "alt": "A sunny Disney Dreamlight Valley village with a player tending a vegetable garden while Disney characters walk along the paths, a castle in the distance.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401590/c27dfdeb531337d0084e1894057209cb04fea3ff/ss_c27dfdeb531337d0084e1894057209cb04fea3ff.1920x1080.jpg?t=1790186056",
+      "page": "https://store.steampowered.com/app/1401590/Disney_Dreamlight_Valley/",
+      "store": "Steam",
+      "copyright": "Gameloft / Disney",
+      "width": 1280,
+      "height": 720,
+      "bytes": 177132,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "disney-dreamlight-valley-og.jpg"
+    }
+  ],
+  "moving-out-2": [
+    {
+      "file": "moving-out-2.webp",
+      "alt": "A Moving Out 2 level seen from above: a house full of furniture to move, a garden and a moving truck waiting on the street, with a timer in the corner.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1641700/ss_a7323ab055b912cc13428a4760155fd536655f2a.1920x1080.jpg?t=1780480295",
+      "page": "https://store.steampowered.com/app/1641700/Moving_Out_2/",
+      "store": "Steam",
+      "copyright": "SMG Studio / Team17",
+      "width": 1280,
+      "height": 720,
+      "bytes": 110928,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "moving-out-2-og.jpg"
+    }
+  ],
+  "lovers-in-a-dangerous-spacetime": [
+    {
+      "file": "lovers-in-a-dangerous-spacetime.webp",
+      "alt": "The inside of a round pink spaceship in Lovers in a Dangerous Spacetime, with small crew members running between stations connected by ladders.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252110/ss_60c96c1a10a821e0558c68c3cb824debbe3e879e.1920x1080.jpg?t=1745967822",
+      "page": "https://store.steampowered.com/app/252110/Lovers_in_a_Dangerous_Spacetime/",
+      "store": "Steam",
+      "copyright": "Asteroid Base",
+      "width": 1280,
+      "height": 720,
+      "bytes": 41104,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "lovers-in-a-dangerous-spacetime-og.jpg"
+    }
+  ],
+  "cuphead": [
+    {
+      "file": "cuphead.webp",
+      "alt": "Cuphead and Mugman standing side by side on a 1930s-cartoon theater stage, facing the performers in a boss fight.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/ss_1bfaa0d236aa99cdc31234aa7aad314898e3d10e.1920x1080.jpg?t=1709068852",
+      "page": "https://store.steampowered.com/app/268910/Cuphead/",
+      "store": "Steam",
+      "copyright": "Studio MDHR",
+      "width": 1280,
+      "height": 720,
+      "bytes": 83786,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "cuphead-og.jpg"
+    }
+  ],
+  "valheim": [
+    {
+      "file": "valheim.webp",
+      "alt": "A Viking longship with a black and white striped sail on bright blue water in Valheim.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/ss_a600a7d4ca954543e22f571a9629521a13f82143.1920x1080.jpg?t=1791544831",
+      "page": "https://store.steampowered.com/app/892970/Valheim/",
+      "store": "Steam",
+      "copyright": "Iron Gate / Coffee Stain Publishing",
+      "width": 1280,
+      "height": 720,
+      "bytes": 91018,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "valheim-og.jpg"
+    }
+  ],
+  "sea-of-thieves": [
+    {
+      "file": "sea-of-thieves.webp",
+      "alt": "A fleet of pirate ships with colorful sails on a sunny sea in Sea of Thieves.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/ss_ec623c77d75dfa098c622b547b1ab21ad4cae0a8.1920x1080.jpg?t=1789650456",
+      "page": "https://store.steampowered.com/app/1172620/Sea_of_Thieves_2026_Edition/",
+      "store": "Steam",
+      "copyright": "Rare / Xbox Game Studios",
+      "width": 1280,
+      "height": 721,
+      "bytes": 100856,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "sea-of-thieves-og.jpg"
+    }
+  ],
+  "pico-park": [
+    {
+      "file": "pico-park.webp",
+      "alt": "Little colored PICO PARK characters stacked on top of each other in a tall tower to reach a ledge.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/ss_d54c6fd82d8c804939d136356eda364295a788cd.1920x1080.jpg?t=1740033204",
+      "page": "https://store.steampowered.com/app/1509960/PICO_PARK/",
+      "store": "Steam",
+      "copyright": "TECOPARK",
+      "width": 1280,
+      "height": 720,
+      "bytes": 6624,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "pico-park-og.jpg"
+    }
   ]
 }

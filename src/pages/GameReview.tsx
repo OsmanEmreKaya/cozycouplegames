@@ -8,6 +8,7 @@ import { Breadcrumbs, GameMedia, Hearts, Rating, TagList, formatDate } from '../
 import { ArrowRight, CheckDoodle, FlowerDoodle, HeartDoodle, InfoDoodle, SparkleDoodle, StarDoodle } from '../components/Doodles'
 import { AboutTheAuthor, AuthorName } from '../components/Author'
 import { gameImages } from '../data/images'
+import { gameFaq } from '../data/gameFaq'
 import './review.css'
 
 export function GameReview({ game }: { game: Game }) {
@@ -199,6 +200,20 @@ export function GameReview({ game }: { game: Game }) {
               </div>
             </div>
             <p className="verdict__sign hand">from our couch to yours ♡</p>
+          </section>
+
+          <section aria-labelledby="faq-title" className="review-faq">
+            <h2 id="faq-title" className="faq__title">
+              Little questions
+            </h2>
+            <div className="faq">
+              {gameFaq(game).map((f) => (
+                <details key={f.q}>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
           </section>
 
           <AboutTheAuthor />

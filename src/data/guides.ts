@@ -2,7 +2,10 @@ import type { ArtTheme } from './types'
 
 export interface Guide {
   slug: string
-  /** Use {n} to insert the number of picks, so titles never drift from the list. */
+  /**
+   * Use {n} to insert the number of picks, so titles never drift from the list, and
+   * {year} for the year of `updated`, so the year only moves when the content does.
+   */
   title: string
   description: string
   excerpt: string
@@ -20,7 +23,7 @@ export interface Guide {
 export const guides: Guide[] = [
   {
     slug: 'best-cozy-games-for-couples',
-    title: '{n} Best Cozy Games for Couples',
+    title: '{n} Best Cozy Games for Couples ({year})',
     description:
       'Our favorite cozy games to play as a couple: gentle co-op farming, gardening and adventure games, picked for how well each one works for two.',
     excerpt: 'The co-op games we keep coming back to, and what each one is best for.',
@@ -47,7 +50,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'best-mobile-games-for-long-distance-couples',
-    title: '{n} Best Phone Games for Long-Distance Couples',
+    title: '{n} Best Phone Games for Long-Distance Couples ({year})',
     description:
       'The best mobile games for long-distance couples on iPhone and Android: shared gardens, turn-based games for different time zones and worlds to meet on a call.',
     excerpt: 'Shared worlds that fit into busy days and different time zones.',
@@ -92,7 +95,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'best-iphone-games-for-couples',
-    title: '{n} Best iPhone Games for Couples',
+    title: '{n} Best iPhone Games for Couples ({year})',
     description:
       'The best iPhone games for couples to play together: iMessage games, shared gardens and cozy worlds. Most are free, and we note which ones work with Android.',
     excerpt: 'Games for two on iPhone, from iMessage games to shared worlds.',
@@ -132,7 +135,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'best-android-games-for-couples',
-    title: '{n} Best Android Games for Couples',
+    title: '{n} Best Android Games for Couples ({year})',
     description:
       'The best Android games for couples, each on your own phone: shared gardens, turn-based games and cozy worlds. Every pick also works with iPhone.',
     excerpt: 'Multiplayer games for two on Android, and with iPhone too.',
@@ -215,7 +218,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'best-free-games-for-couples',
-    title: 'Best Free Games for Couples',
+    title: 'Best Free Games for Couples ({year})',
     description:
       'The best free games for couples on iPhone, Android, PC and consoles: shared gardens, cozy online worlds and chat games that never push you to pay.',
     excerpt: 'Great games for two that don’t cost a thing to start.',
@@ -234,8 +237,132 @@ export const guides: Guide[] = [
     ],
     outro: 'Start with one of these before buying anything. You’ll learn quickly what kind of games you like playing together.',
   },
+  {
+    slug: 'valentines-day-games-for-couples',
+    title: '{n} Valentine’s Day Games for Couples',
+    description:
+      'Romantic video games to play together on Valentine’s Day, on the couch or long distance: co-op adventures, shared gardens and games literally about love.',
+    excerpt: 'Romantic games for two, near or far.',
+    kicker: 'Valentine’s Day',
+    published: '2026-10-21',
+    updated: '2026-10-21',
+    art: 'clouds',
+    intro: [
+      'Dinner, flowers, and then what? A game you play together is a nice way to end Valentine’s Day: you’re side by side (or on a call), working toward the same thing, and you’ll probably laugh more than you expect.',
+      'We picked games that feel a little romantic, either because they’re about a couple, because they let you do sweet things together, or because they’re simply beautiful to share. There’s something for the couch, for long distance and for partners who don’t usually play.',
+    ],
+    picks: [
+      { game: 'sky-children-of-the-light', heading: 'Most romantic', note: 'Hold hands and fly through the clouds. Free, and it works across phones, consoles and PC, so it’s perfect for a long-distance Valentine’s date.' },
+      { game: 'it-takes-two', heading: 'A game about your relationship', note: 'A co-op adventure about a couple rediscovering each other. Only one of you needs to buy it, thanks to the Friend’s Pass.' },
+      { game: 'lovers-in-a-dangerous-spacetime', heading: 'Best for the couch', note: 'It’s in the name. Run a neon spaceship together and save space bunnies.' },
+      { game: 'stardew-valley', heading: 'Start a life together', note: 'Share a farm, and yes, you can marry each other in the game.' },
+      { game: 'our-flower-garden', heading: 'Flowers that last', note: 'Grow a garden together on your phones and keep it going long after the day itself.' },
+      { game: 'unravel-two', heading: 'Most symbolic', note: 'Two little yarn creatures tied together by one thread. A short, pretty evening game.' },
+      { game: 'split-fiction', heading: 'For a big Valentine’s weekend', note: 'The next game from the It Takes Two team, built for exactly two players.' },
+    ],
+    faq: [
+      {
+        q: 'What can long-distance couples play on Valentine’s Day?',
+        a: 'Sky: Children of the Light is the most date-like: you explore together and can hold hands while you talk on a call. It Takes Two and Split Fiction work online too, and only one of you needs to buy them.',
+      },
+      {
+        q: 'What’s a romantic game for a partner who doesn’t play games?',
+        a: 'Our Flower Garden or Sky: Children of the Light. Both are gentle, free and easy to learn.',
+      },
+      {
+        q: 'Are there free Valentine’s Day games for couples?',
+        a: 'Yes. Sky: Children of the Light and Our Flower Garden are free to download.',
+      },
+    ],
+    outro:
+      'Our pick for the evening itself: Sky if you’re apart, Lovers in a Dangerous Spacetime if you’re on the same couch. Then start Our Flower Garden so the flowers last past February.',
+  },
+  {
+    slug: 'date-night-games-for-couples',
+    title: '{n} Date Night Games for Couples',
+    description:
+      'Video games for a date night at home or online: co-op games you can start and enjoy in one evening, from short puzzle games to silly party chaos.',
+    excerpt: 'Games that fit into one good evening.',
+    kicker: 'Date night',
+    published: '2026-10-21',
+    updated: '2026-10-21',
+    art: 'kitchen',
+    intro: [
+      'A good date-night game is easy to start, fun from the first ten minutes and doesn’t need a 40-hour commitment. You should be able to play it after dinner and stop when you feel like it.',
+      'These are all co-op or friendly competition, and we’ve marked which ones work online for long-distance date nights.',
+    ],
+    picks: [
+      { game: 'it-takes-two', heading: 'Best overall', note: 'A chapter is about one evening, so it turns into a series of date nights. Online or on the couch.' },
+      { game: 'snipperclips', heading: 'Best for laughing', note: 'Cut each other into new shapes to solve puzzles. Short, silly and easy for anyone.' },
+      { game: 'portal-2', heading: 'Best for puzzle lovers', note: 'The co-op campaign is clever, cheap and best played talking it through. Online or split-screen.' },
+      { game: 'overcooked-all-you-can-eat', heading: 'Best for chaos', note: 'Cook together and shout about plates. Online and on the couch.' },
+      { game: 'moving-out-2', heading: 'Best for a gentler kind of chaos', note: 'Move furniture together, with assist options if things get heated. Online and crossplay.' },
+      { game: 'pico-park', heading: 'Best for partners who don’t play', note: 'Left, right and jump is all you need. Costs about $5.' },
+      { game: 'mario-kart-8-deluxe', heading: 'Best for friendly rivalry', note: 'A few races before bed. Assists keep it fair if one of you plays more.' },
+      { game: 'sky-children-of-the-light', heading: 'Best calm date night', note: 'Explore, sit by a fire and talk. Free and works long distance.' },
+    ],
+    faq: [
+      {
+        q: 'What are good online date night games for long-distance couples?',
+        a: 'It Takes Two, Portal 2, Overcooked! All You Can Eat, Moving Out 2 and Sky: Children of the Light all work online. With It Takes Two, only one of you needs to buy the game.',
+      },
+      {
+        q: 'What should we play if one of us doesn’t play games?',
+        a: 'PICO PARK or Snipperclips. Both are easy to pick up and built around helping each other.',
+      },
+      {
+        q: 'Are there free date night games?',
+        a: 'Sky: Children of the Light is free and works on almost every device.',
+      },
+    ],
+    outro:
+      'For a first game night, start with Snipperclips or PICO PARK. If that goes well, It Takes Two can turn into a weekly date.',
+  },
+  {
+    slug: 'christmas-games-for-couples',
+    title: '{n} Cozy Games to Play Together at Christmas',
+    description:
+      'Cozy and festive games for couples to play over the holidays: winter festivals, snowy chapters and long co-op games for the days between Christmas and New Year.',
+    excerpt: 'Snowy, festive and good for long holiday evenings.',
+    kicker: 'Christmas',
+    published: '2026-10-21',
+    updated: '2026-10-21',
+    art: 'yarn',
+    intro: [
+      'The holidays are the one time of year when you might actually have a few free evenings in a row. That makes them perfect for starting a bigger game together, or for a cozy one with its own winter festival.',
+      'Some of these have in-game winter events, some have snowy chapters, and some are just good for the quiet days between Christmas and New Year.',
+    ],
+    picks: [
+      { game: 'stardew-valley', heading: 'Best winter festival', note: 'Winter has the Feast of the Winter Star, with a secret gift exchange in town. Start a new farm together over the break.' },
+      { game: 'animal-crossing-new-horizons', heading: 'Most festive', note: 'Toy Day on December 24, snow on the island and plenty of winter furniture to decorate with.' },
+      { game: 'it-takes-two', heading: 'Best snowy chapter', note: 'One chapter takes place inside a snow globe. The rest of the game is great too.' },
+      { game: 'split-fiction', heading: 'Best for the holiday break', note: 'A big two-player adventure that fits nicely into the days between Christmas and New Year.' },
+      { game: 'dont-starve-together', heading: 'Best for surviving winter', note: 'Literally. Prepare your camp for the cold together, and look out for the Winter’s Feast event Klei usually runs in December.' },
+      { game: 'mario-kart-8-deluxe', heading: 'Best with family', note: 'Up to four on one Switch, and everyone already knows how to play.' },
+      { game: 'our-flower-garden', heading: 'Best if you spend the holidays apart', note: 'If you’re each with your own family, a shared garden is an easy way to stay close.' },
+    ],
+    faq: [
+      {
+        q: 'What’s a good game to start together over Christmas?',
+        a: 'Stardew Valley or Split Fiction. Both are long enough to fill the holiday break, and Stardew has its own winter festival.',
+      },
+      {
+        q: 'What can we play if we spend Christmas with different families?',
+        a: 'Our Flower Garden on your phones, or Sky: Children of the Light for an evening together online.',
+      },
+      {
+        q: 'Which games have Christmas or winter events?',
+        a: 'Stardew Valley has the Feast of the Winter Star, Animal Crossing: New Horizons has Toy Day on December 24, and Don’t Starve Together usually runs a Winter’s Feast event in December.',
+      },
+    ],
+    outro:
+      'Our favorite holiday combination: a new Stardew farm for the slow mornings and Mario Kart for when the family wants in.',
+  },
 ]
 
-export const guideTitle = (g: Guide) => g.title.replace('{n}', String(g.picks.length))
+export const guideTitle = (g: Guide, { year = true } = {}) =>
+  g.title
+    .replace('{n}', String(g.picks.length))
+    .replace(/ ?\(\{year\}\)/, year ? ` (${g.updated.slice(0, 4)})` : '')
 
 export const getGuide = (slug: string) => guides.find((g) => g.slug === slug)
