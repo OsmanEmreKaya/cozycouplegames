@@ -84,7 +84,8 @@ export function GameMedia({
     const img = images[0]
     return (
       <img
-        className={`${className ?? ''} media-landscape`}
+        // Wider than 16:9 (e.g. iPhone landscape screenshots): letterbox instead of cropping.
+        className={`${className ?? ''} media-landscape${img.width / img.height > 1.9 ? ' media-landscape--wide' : ''}`}
         src={imageSrc(img)}
         srcSet={imageSrcSet(img)}
         sizes={sizes}

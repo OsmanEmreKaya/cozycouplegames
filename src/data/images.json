@@ -369,5 +369,219 @@
         512
       ]
     }
+  ],
+  "words-with-friends": [
+    {
+      "file": "words-with-friends-1.webp",
+      "alt": "A Words With Friends board mid-game, with words like PLAY, SMARTER and FRIENDS crossing on the grid and a rack of letter tiles below.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/9e/ed/169eedc1-7d4e-4a57-98cc-de10782d8214/WWF_25Q1-SS1_1242x2208__U00281_U0029.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/words-with-friends-word-game/id1196764367",
+      "store": "App Store",
+      "copyright": "Zynga Inc.",
+      "width": 619,
+      "height": 1100,
+      "bytes": 63254,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "words-with-friends-2.webp",
+      "alt": "A Words With Friends match between two players, shown face to face with a “VS” between them over the board.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/7b/84/51/7b845102-b1be-f9c5-b1a0-9b7feb83dc74/WWF_25Q1-SS7_1242x2208.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/words-with-friends-word-game/id1196764367",
+      "store": "App Store",
+      "copyright": "Zynga Inc.",
+      "width": 619,
+      "height": 1100,
+      "bytes": 53794,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "words-with-friends-3.webp",
+      "alt": "A Words With Friends board with a purple tile style, the word FRIENDS spelled in the rack at the bottom.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1d/d9/b2/1dd9b29c-36e2-3900-65f0-e66cc4407c96/WWF_25Q1-SS6_1242x2208.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/words-with-friends-word-game/id1196764367",
+      "store": "App Store",
+      "copyright": "Zynga Inc.",
+      "width": 619,
+      "height": 1100,
+      "bytes": 45862,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "kind": "icon",
+      "file": "words-with-friends-icon.webp",
+      "alt": "Words With Friends app icon: a yellow letter tile with a brown W, wrapped in knitted orange and blue yarn.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/20/c7/b3/20c7b312-7635-c930-23b8-ba0466258a48/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/words-with-friends-word-game/id1196764367",
+      "store": "App Store",
+      "copyright": "Zynga Inc.",
+      "width": 512,
+      "height": 512,
+      "bytes": 20212,
+      "widths": [
+        128,
+        256,
+        512
+      ]
+    }
+  ],
+  "uno-mobile": [
+    {
+      "file": "uno-mobile-1.webp",
+      "alt": "An UNO! table with four players, two of them teamed up, and a fan of UNO cards in the player’s hand under the caption “Team up with your friends”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/a4/fd/65a4fdce-be88-c1bc-f77c-41e30a25e508/UNO_2778x1284_English_02.jpg/1600x0w.jpg",
+      "page": "https://apps.apple.com/us/app/uno/id1344700142",
+      "store": "App Store",
+      "copyright": "Mattel",
+      "width": 1280,
+      "height": 592,
+      "bytes": 68764,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "uno-mobile-1-og.jpg"
+    },
+    {
+      "file": "uno-mobile-2.webp",
+      "alt": "The UNO! friends chat, with messages about playing another round next to a friends list, under the caption “Chat & play with friends”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/67/a3/f5/67a3f5c0-63f2-2621-12ea-22fce34eda35/UNO_2778x1284_EN_05.jpg/1600x0w.jpg",
+      "page": "https://apps.apple.com/us/app/uno/id1344700142",
+      "store": "App Store",
+      "copyright": "Mattel",
+      "width": 1280,
+      "height": 592,
+      "bytes": 60826,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    },
+    {
+      "file": "uno-mobile-3.webp",
+      "alt": "UNO! game mode screens: Go Wild, a room mode with custom rules, and the UNO Universe city map.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a8/37/d2/a837d2d1-67ba-3fcd-2c8d-b1c7a746d955/UNO_2778x1284_English_03.jpg/1600x0w.jpg",
+      "page": "https://apps.apple.com/us/app/uno/id1344700142",
+      "store": "App Store",
+      "copyright": "Mattel",
+      "width": 1280,
+      "height": 592,
+      "bytes": 84398,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    },
+    {
+      "kind": "icon",
+      "file": "uno-mobile-icon.webp",
+      "alt": "UNO! app icon: the yellow and red UNO! logo above a fan of UNO cards on a red background.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/a6/ea/f2a6ea3c-fd20-54b5-d86c-6a9237affc2e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/uno/id1344700142",
+      "store": "App Store",
+      "copyright": "Mattel",
+      "width": 512,
+      "height": 512,
+      "bytes": 22032,
+      "widths": [
+        128,
+        256,
+        512
+      ]
+    }
+  ],
+  "pokemon-go": [
+    {
+      "file": "pokemon-go-1.webp",
+      "alt": "A Pokémon GO raid battle against a large Pokémon, with Glaceon in the foreground under the caption “Raid with trainers”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/a3/a3/88a3a3a9-35eb-2464-9a5c-b833759b3225/PGO_ASO-Screenshots-EG-03-RAID_1242x2208__static_UA_EN_NV.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345",
+      "store": "App Store",
+      "copyright": "Scopely Explore / Pokémon, Nintendo, Creatures, GAME FREAK",
+      "width": 619,
+      "height": 1100,
+      "bytes": 75388,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "pokemon-go-2.webp",
+      "alt": "A Dragonite appearing on grass in Pokémon GO, with a Poké Ball and Pikachu in the foreground under the caption “Catch Pokémon”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d0/4d/6e/d04d6e04-55bc-a798-324d-d6f7734887e2/PGO_ASO-Screenshots-EG-04-CATCH_1242x2208__static_UA_EN_NV.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345",
+      "store": "App Store",
+      "copyright": "Scopely Explore / Pokémon, Nintendo, Creatures, GAME FREAK",
+      "width": 619,
+      "height": 1100,
+      "bytes": 103464,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "pokemon-go-3.webp",
+      "alt": "A Pokémon GO collection screen listing caught Pokémon with their CP, with Riolu in the foreground under the caption “Collect 1000+ Pokémon”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/64/49/c1/6449c148-01e5-a602-1ec1-8214da98eb26/PGO_ASO-Screenshots-EG-07-COLLECT_1242x2208__static_UA_EN_NV.png/1242x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345",
+      "store": "App Store",
+      "copyright": "Scopely Explore / Pokémon, Nintendo, Creatures, GAME FREAK",
+      "width": 619,
+      "height": 1100,
+      "bytes": 73914,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "kind": "icon",
+      "file": "pokemon-go-icon.webp",
+      "alt": "Pokémon GO app icon: a red and white Poké Ball against a purple and orange starry sky.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/f4/a8/43f4a876-bd4f-f5ca-4167-38abafd00f96/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-go/id1094591345",
+      "store": "App Store",
+      "copyright": "Scopely Explore / Pokémon, Nintendo, Creatures, GAME FREAK",
+      "width": 512,
+      "height": 512,
+      "bytes": 12046,
+      "widths": [
+        128,
+        256,
+        512
+      ]
+    }
   ]
 }

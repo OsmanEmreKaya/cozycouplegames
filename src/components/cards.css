@@ -457,6 +457,9 @@
 .media-landscape {
   object-fit: cover;
 }
+.media-landscape--wide {
+  object-fit: contain;
+}
 /* Portrait phone screenshots are shown whole, side by side, on the frame's tint.
    Absolutely positioned so the screenshots never stretch the frame's aspect ratio. */
 .media-phones {

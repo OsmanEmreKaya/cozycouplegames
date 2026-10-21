@@ -63,20 +63,20 @@ export const guides: Guide[] = [
     picks: [
       { game: 'our-flower-garden', heading: 'Best for different time zones', note: 'You each look after the same garden whenever you’re awake, so you wake up to flowers your partner watered. iPhone and Android.' },
       { game: 'sky-children-of-the-light', heading: 'Best for a call date', note: 'Meet up in the clouds, hold hands, sit by a fire and talk. Free, and works across iPhone, Android, Switch, PlayStation and PC.' },
-      { game: 'words-with-friends-2', heading: 'Best turn-based game for any two phones', note: 'One word at a time, whenever you have a minute. Works between iPhone and Android.' },
+      { game: 'words-with-friends', heading: 'Best turn-based game for any two phones', note: 'One word at a time, whenever you have a minute. Works between iPhone and Android.' },
       { game: 'gamepigeon', heading: 'Best if you both have iPhones', note: 'Mini golf, pool and word games right inside your iMessage chat.' },
-      { game: 'uno-mobile', heading: 'Best for quick rounds on a call', note: 'A private room for two and a game nobody needs to learn.' },
-      { game: 'pokemon-go', heading: 'Best for daily gifts and visits', note: 'Send each other gifts from your walks, raid together remotely and explore together when you visit.' },
+      { game: 'uno-mobile', heading: 'Best for quick rounds on a call', note: 'Live rounds with your own house rules, and a game nobody needs to learn.' },
+      { game: 'pokemon-go', heading: 'Best for daily gifts and visits', note: 'Send each other gifts from your walks, invite each other to raids and explore together when you visit.' },
       { game: 'minecraft', heading: 'Best for building something together', note: 'Start a shared world on your phones and keep adding to it. Bedrock works across iPhone, Android and consoles.' },
     ],
     faq: [
       {
         q: 'What games can long-distance couples play on the phone?',
-        a: 'For different time zones, pick something you can play at different times: Our Flower Garden, Words With Friends 2 or GamePigeon. For a live date on a call, try Sky: Children of the Light, UNO! or Minecraft.',
+        a: 'For different time zones, pick something you can play at different times: Our Flower Garden, Words With Friends or GamePigeon. For a live date on a call, try Sky: Children of the Light, UNO! or Minecraft.',
       },
       {
         q: 'Which phone games work if one of us has an iPhone and the other has Android?',
-        a: 'Our Flower Garden, Sky: Children of the Light, Words With Friends 2, UNO!, Pokémon GO and Minecraft all work between iPhone and Android. GamePigeon is iPhone only because it runs inside iMessage.',
+        a: 'Our Flower Garden, Sky: Children of the Light, Words With Friends, UNO!, Pokémon GO and Minecraft all work between iPhone and Android. GamePigeon is iPhone only because it runs inside iMessage.',
       },
       {
         q: 'Are there free phone games for long-distance couples?',
@@ -88,7 +88,7 @@ export const guides: Guide[] = [
       },
     ],
     outro:
-      'A good combination: one daily game (Our Flower Garden or Words With Friends 2) plus one date-night game (Sky). Small moments and big ones.',
+      'A good combination: one daily game (Our Flower Garden or Words With Friends) plus one date-night game (Sky). Small moments and big ones.',
   },
   {
     slug: 'best-iphone-games-for-couples',
@@ -109,14 +109,14 @@ export const guides: Guide[] = [
       { game: 'our-flower-garden', heading: 'Best cozy game', note: 'One shared garden on your two phones. Plant, water and fill orders together, a few minutes a day. Also on Android.' },
       { game: 'sky-children-of-the-light', heading: 'Most romantic', note: 'Fly through the clouds holding hands. Free, beautiful and on almost every device.' },
       { game: 'minecraft', heading: 'Best for building', note: 'A shared world you keep adding to. Paid, and plays with Android and consoles too.' },
-      { game: 'words-with-friends-2', heading: 'Best word game', note: 'A slow, turn-based word game that lasts for days. Free, and works with Android.' },
-      { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live rounds of UNO! in a private room for two. Free.' },
+      { game: 'words-with-friends', heading: 'Best word game', note: 'A slow, turn-based word game that lasts for days. Free, and works with Android.' },
+      { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live rounds of UNO! with your own house rules. Free.' },
       { game: 'pokemon-go', heading: 'Best for going out together', note: 'Catch Pokémon on walks together and send each other gifts when you’re apart. Free.' },
     ],
     faq: [
       {
         q: 'What are the best free iPhone games for couples?',
-        a: 'GamePigeon, Our Flower Garden, Sky: Children of the Light, Words With Friends 2, UNO! and Pokémon GO are all free to download. Minecraft is the only paid game on this list.',
+        a: 'GamePigeon, Our Flower Garden, Sky: Children of the Light, Words With Friends, UNO! and Pokémon GO are all free to download. Minecraft is the only paid game on this list.',
       },
       {
         q: 'Can we play Stardew Valley together on iPhone?',
@@ -124,7 +124,7 @@ export const guides: Guide[] = [
       },
       {
         q: 'Which iPhone couple games also work with Android?',
-        a: 'Our Flower Garden, Sky: Children of the Light, Minecraft, Words With Friends 2, UNO! and Pokémon GO. GamePigeon only works between two iPhones.',
+        a: 'Our Flower Garden, Sky: Children of the Light, Minecraft, Words With Friends, UNO! and Pokémon GO. GamePigeon only works between two iPhones.',
       },
     ],
     outro:
@@ -147,19 +147,19 @@ export const guides: Guide[] = [
     picks: [
       { game: 'our-flower-garden', heading: 'Best cozy game', note: 'A shared flower garden for two phones. Plant, water, harvest and fill orders together. Free.' },
       { game: 'sky-children-of-the-light', heading: 'Most romantic', note: 'Explore a world in the clouds together, holding hands. Free on Android, iPhone, consoles and PC.' },
-      { game: 'words-with-friends-2', heading: 'Best GamePigeon alternative', note: 'Turn-based, chatty and works between Android and iPhone. Free.' },
-      { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live UNO! in a private room, with 2v2 if friends join. Free.' },
+      { game: 'words-with-friends', heading: 'Best GamePigeon alternative', note: 'Turn-based and works between Android and iPhone. Free.' },
+      { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live UNO! with your own house rules, and 2v2 if friends join. Free.' },
       { game: 'minecraft', heading: 'Best for building', note: 'Build a world together on your phones, or with one of you on a console. Paid.' },
       { game: 'pokemon-go', heading: 'Best for going out together', note: 'Explore together on walks, and send gifts and join raids when you’re apart. Free.' },
     ],
     faq: [
       {
         q: 'Is there a GamePigeon for Android?',
-        a: 'No. GamePigeon runs inside iMessage, so it only works between two iPhones. Words With Friends 2 and UNO! give you similar quick games and work between Android and iPhone.',
+        a: 'No. GamePigeon runs inside iMessage, so it only works between two iPhones. Words With Friends and UNO! give you similar quick games and work between Android and iPhone.',
       },
       {
         q: 'What are good multiplayer Android games for couples?',
-        a: 'Our Flower Garden for a shared daily routine, Sky: Children of the Light for exploring together, Minecraft for building, and Words With Friends 2 or UNO! for a bit of competition.',
+        a: 'Our Flower Garden for a shared daily routine, Sky: Children of the Light for exploring together, Minecraft for building, and Words With Friends or UNO! for a bit of competition.',
       },
       {
         q: 'Can we play together if I have Android and my partner has an iPhone?',
