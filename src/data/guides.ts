@@ -29,7 +29,7 @@ export const guides: Guide[] = [
     excerpt: 'The co-op games we keep coming back to, and what each one is best for.',
     kicker: 'Our list',
     published: '2026-10-05',
-    updated: '2026-10-05',
+    updated: '2026-11-02',
     art: 'garden',
     intro: [
       'Our answer to “what should we play together?” Some of these have endings and some never stop, but all of them work well for two.',
@@ -44,6 +44,8 @@ export const guides: Guide[] = [
       { game: 'spiritfarer', heading: 'Best story', note: 'Beautiful and emotional. Player two plays the cat, which is a better role than it sounds.' },
       { game: 'unravel-two', heading: 'Best weekend game', note: 'Short and pretty. Two yarn creatures, one thread.' },
       { game: 'snipperclips', heading: 'Best first game', note: 'Cute paper puzzles that need zero gaming experience.' },
+      { game: 'coral-island', heading: 'Best Stardew alternative online', note: 'A tropical farm you can share online, with crossplay across PC, PlayStation and Xbox, and you can marry each other in it.' },
+      { game: 'haven', heading: 'Best love story', note: 'You play both halves of a couple on a lost planet. Couch co-op only, and all the better for it.' },
     ],
     outro:
       'If you can only pick one: Stardew Valley for long weekends together, Our Flower Garden for every day in between.',
@@ -56,7 +58,7 @@ export const guides: Guide[] = [
     excerpt: 'Shared worlds that fit into busy days and different time zones.',
     kicker: 'Long distance',
     published: '2026-10-05',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'bubbles',
     intro: [
       'When you live apart, the hard part is often the in-between: the hours when you’re both busy and the days when calls are short. Phone games fit those gaps well, because your phone is already where your relationship lives.',
@@ -71,6 +73,8 @@ export const guides: Guide[] = [
       { game: 'uno-mobile', heading: 'Best for quick rounds on a call', note: 'Live rounds with your own house rules, and a game nobody needs to learn.' },
       { game: 'pokemon-go', heading: 'Best for daily gifts and visits', note: 'Send each other gifts from your walks, invite each other to raids and explore together when you visit.' },
       { game: 'minecraft', heading: 'Best for building something together', note: 'Start a shared world on your phones and keep adding to it. Bedrock works across iPhone, Android and consoles.' },
+      { game: 'pokemon-tcg-pocket', heading: 'Best daily ritual', note: 'Open your free packs, gift each other a card and pick from each other’s pulls. A few minutes a day, free, on iPhone and Android.' },
+      { game: 'wingspan', heading: 'Best for a slow board game night', note: 'Play the bird board game online across phones, consoles and PC. Calm, competitive and good on a call.' },
     ],
     faq: [
       {
@@ -101,7 +105,7 @@ export const guides: Guide[] = [
     excerpt: 'Games for two on iPhone, from iMessage games to shared worlds.',
     kicker: 'iPhone',
     published: '2026-10-21',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'garden',
     intro: [
       'The App Store is full of “couple games” that turn out to be quizzes or single-player apps with a shared score. These are games where you actually play together, each on your own iPhone.',
@@ -115,6 +119,8 @@ export const guides: Guide[] = [
       { game: 'words-with-friends', heading: 'Best word game', note: 'A slow, turn-based word game that lasts for days. Free, and works with Android.' },
       { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live rounds of UNO! with your own house rules. Free.' },
       { game: 'pokemon-go', heading: 'Best for going out together', note: 'Catch Pokémon on walks together and send each other gifts when you’re apart. Free.' },
+      { game: 'pokemon-tcg-pocket', heading: 'Best for collectors', note: 'Two free packs a day, a card gift for your partner and private battles. Free, and works with Android.' },
+      { game: 'wingspan', heading: 'Best board game', note: 'Pass one iPhone back and forth, or play online with any device your partner owns. Paid.' },
     ],
     faq: [
       {
@@ -141,7 +147,7 @@ export const guides: Guide[] = [
     excerpt: 'Multiplayer games for two on Android, and with iPhone too.',
     kicker: 'Android',
     published: '2026-10-21',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'meadow',
     intro: [
       'Android couples miss out on iMessage games like GamePigeon, but there are good multiplayer games for two on Google Play, and every one of these also works if your partner has an iPhone.',
@@ -154,6 +160,8 @@ export const guides: Guide[] = [
       { game: 'uno-mobile', heading: 'Best for quick rounds', note: 'Live UNO! with your own house rules, and 2v2 if friends join. Free.' },
       { game: 'minecraft', heading: 'Best for building', note: 'Build a world together on your phones, or with one of you on a console. Paid.' },
       { game: 'pokemon-go', heading: 'Best for going out together', note: 'Explore together on walks, and send gifts and join raids when you’re apart. Free.' },
+      { game: 'pokemon-tcg-pocket', heading: 'Best for collectors', note: 'Open free packs, trade and gift cards to each other and battle with a private password. Free, and works with iPhone.' },
+      { game: 'wingspan', heading: 'Best board game', note: 'The bird board game with pass-and-play and cross-platform online. Paid.' },
     ],
     faq: [
       {
@@ -180,7 +188,7 @@ export const guides: Guide[] = [
     excerpt: 'For evenings when you both want to unwind, not compete.',
     kicker: 'Unwind',
     published: '2026-10-05',
-    updated: '2026-10-05',
+    updated: '2026-11-02',
     art: 'clouds',
     intro: [
       'Some evenings you want an adventure. Others you want to sit close and do something calm. This list is for those.',
@@ -192,6 +200,8 @@ export const guides: Guide[] = [
       { game: 'animal-crossing-new-horizons', heading: 'For slow evenings', note: 'Catch fish, decorate, and talk about nothing much.' },
       { game: 'unravel-two', heading: 'For a soft adventure', note: 'Easy puzzles and great scenery.' },
       { game: 'spiritfarer', heading: 'For deep conversations', note: 'Relaxing to play, emotional to experience.' },
+      { game: 'wingspan', heading: 'For a quiet rivalry', note: 'Bird calls, slow turns and a close score. Online or on one tablet.' },
+      { game: 'haven', heading: 'For a love story', note: 'Glide, cook and talk as a couple on a lost planet. Couch co-op only.' },
     ],
     outro: 'Pick whichever matches your mood tonight.',
   },
@@ -203,7 +213,7 @@ export const guides: Guide[] = [
     excerpt: 'Plant, water, harvest and build a life together.',
     kicker: 'Farming',
     published: '2026-10-05',
-    updated: '2026-10-05',
+    updated: '2026-11-02',
     art: 'farm',
     intro: [
       'Growing things together is oddly romantic, even when they’re pixel parsnips. Farming games give you shared goals, a daily routine and something to show for your evenings.',
@@ -213,6 +223,8 @@ export const guides: Guide[] = [
       { game: 'our-flower-garden', heading: 'The pocket garden', note: 'A shared flower garden on your phones. The easiest way to farm together every day.' },
       { game: 'palia', heading: 'The free online one', note: 'Separate gardens, shared world. Help each other out.' },
       { game: 'animal-crossing-new-horizons', heading: 'The gardening one', note: 'Not a farm exactly, but flower-breeding is a serious couple hobby.' },
+      { game: 'coral-island', heading: 'The online one', note: 'Stardew’s closest cousin, with a shared farm online and crossplay across PC and consoles.' },
+      { game: 'core-keeper', heading: 'The underground one', note: 'Farm glowing crops and cook for each other in a cave you dug out together.' },
     ],
     outro: 'If you’ve finished Stardew together and want something new, try Palia for a bigger world or Our Flower Garden for a daily habit.',
   },
@@ -239,6 +251,7 @@ export const guides: Guide[] = [
       { game: 'uno-mobile', heading: 'Best free game for a call', note: 'Live rounds of UNO with your own house rules. Ignore the offers and play friends games.' },
       { game: 'gamepigeon', heading: 'Best free chat game', note: 'Small games in your iMessage chat, ideal for busy days. iPhone only.' },
       { game: 'pokemon-go', heading: 'Best free game for visits', note: 'Daily gifts from where your partner is, and a great walking date when you’re together. No ads.' },
+      { game: 'pokemon-tcg-pocket', heading: 'Best free collecting game', note: 'Two free packs a day, a card gift for each other and private battles. No ads, and the shop is easy to ignore.' },
     ],
     faq: [
       {
@@ -268,7 +281,7 @@ export const guides: Guide[] = [
     excerpt: 'Romantic games for two, near or far.',
     kicker: 'Valentine’s Day',
     published: '2026-10-21',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'clouds',
     intro: [
       'Dinner, flowers, and then what? A game you play together is a nice way to end Valentine’s Day: you’re side by side (or on a call), working toward the same thing, and you’ll probably laugh more than you expect.',
@@ -282,6 +295,8 @@ export const guides: Guide[] = [
       { game: 'our-flower-garden', heading: 'Flowers that last', note: 'Grow a garden together on your phones and keep it going long after the day itself.' },
       { game: 'unravel-two', heading: 'Most symbolic', note: 'Two little yarn creatures tied together by one thread. A short, pretty evening game.' },
       { game: 'split-fiction', heading: 'For a big Valentine’s weekend', note: 'The next game from the It Takes Two team, built for exactly two players.' },
+      { game: 'haven', heading: 'Literally a game about a couple', note: 'You play Yu and Kay, two lovers on a lost planet, side by side on the couch.' },
+      { game: 'a-way-out', heading: 'For a crime-film date night', note: 'A split-screen prison break for exactly two. Grittier than It Takes Two, and one copy covers you both online.' },
     ],
     faq: [
       {
@@ -308,7 +323,7 @@ export const guides: Guide[] = [
     excerpt: 'Games that fit into one good evening.',
     kicker: 'Date night',
     published: '2026-10-21',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'kitchen',
     intro: [
       'A good date-night game is easy to start, fun from the first ten minutes and doesn’t need a 40-hour commitment. You should be able to play it after dinner and stop when you feel like it.',
@@ -323,6 +338,9 @@ export const guides: Guide[] = [
       { game: 'pico-park', heading: 'Best for partners who don’t play', note: 'Left, right and jump is all you need. Costs about $5.' },
       { game: 'mario-kart-8-deluxe', heading: 'Best for friendly rivalry', note: 'A few races before bed. Assists keep it fair if one of you plays more.' },
       { game: 'sky-children-of-the-light', heading: 'Best calm date night', note: 'Explore, sit by a fire and talk. Free and works long distance.' },
+      { game: 'we-were-here-together', heading: 'Best for talking', note: 'A two-player escape room over walkie-talkies. Perfect on a call, and crossplay across PC and consoles.' },
+      { game: 'plateup', heading: 'Best for planners', note: 'Run a restaurant together, then redesign the kitchen between shifts. Online or on the couch.' },
+      { game: 'a-way-out', heading: 'Best movie night that’s a game', note: 'A six-hour prison break in split-screen, for exactly two. Rated M.' },
     ],
     faq: [
       {
@@ -349,7 +367,7 @@ export const guides: Guide[] = [
     excerpt: 'Snowy, festive and good for long holiday evenings.',
     kicker: 'Christmas',
     published: '2026-10-21',
-    updated: '2026-10-21',
+    updated: '2026-11-02',
     art: 'yarn',
     intro: [
       'The holidays are the one time of year when you might actually have a few free evenings in a row. That makes them perfect for starting a bigger game together, or for a cozy one with its own winter festival.',
@@ -363,6 +381,8 @@ export const guides: Guide[] = [
       { game: 'dont-starve-together', heading: 'Best for surviving winter', note: 'Literally. Prepare your camp for the cold together, and look out for the Winter’s Feast event Klei usually runs in December.' },
       { game: 'mario-kart-8-deluxe', heading: 'Best with family', note: 'Up to four on one Switch, and everyone already knows how to play.' },
       { game: 'our-flower-garden', heading: 'Best if you spend the holidays apart', note: 'If you’re each with your own family, a shared garden is an easy way to stay close.' },
+      { game: 'super-mario-bros-wonder', heading: 'Best with the whole family on the couch', note: 'Up to four on one Switch, and Yoshi never takes damage, so grandparents can join.' },
+      { game: 'we-were-here-together', heading: 'Best snowy puzzle', note: 'An Antarctic expedition and a frozen castle, solved over walkie-talkies with your partner.' },
     ],
     faq: [
       {

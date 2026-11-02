@@ -793,5 +793,335 @@
       ],
       "og": "pico-park-og.jpg"
     }
+  ],
+  "haven": [
+    {
+      "file": "haven.webp",
+      "alt": "Yu and Kay gliding side by side over blue grass toward a rock arch, leaving trails of light behind them, with islands floating in the sky.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/983970/ss_149d23880c846f5730b56d578e99efa366b9be69.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/983970/Haven/",
+      "store": "Steam",
+      "copyright": "The Game Bakers",
+      "width": 1280,
+      "height": 720,
+      "bytes": 104410,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "haven-og.jpg"
+    },
+    {
+      "file": "haven-2.webp",
+      "alt": "Yu and Kay fighting a red-winged creature in a yellow field, with a shared “Duo Impact” prompt between them.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/983970/ss_d87da2bdda749b9c1dd08eef575f2fa38bbd919f.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/983970/Haven/",
+      "store": "Steam",
+      "copyright": "The Game Bakers",
+      "width": 1280,
+      "height": 720,
+      "bytes": 49518,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "a-way-out": [
+    {
+      "file": "a-way-out.webp",
+      "alt": "Split-screen view of the prison yard in A Way Out: one of the two inmates walks past a fence on the left while the other stands by a chain-link fence on the right.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/ss_a7f52388d8d64bf56170baf5bd223fbbb1d9a94a.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1222700/A_Way_Out/",
+      "store": "Steam",
+      "copyright": "Hazelight Studios / Electronic Arts",
+      "width": 1280,
+      "height": 720,
+      "bytes": 277922,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "a-way-out-og.jpg"
+    },
+    {
+      "file": "a-way-out-2.webp",
+      "alt": "Split-screen chase in A Way Out: a man on a motorbike rides beside a truck on a dirt road in the top half, while the other rides through jungle in the bottom half.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222700/ss_55237e6d80cf3f9e2f3f0fa41d710a7ea35b022b.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1222700/A_Way_Out/",
+      "store": "Steam",
+      "copyright": "Hazelight Studios / Electronic Arts",
+      "width": 1280,
+      "height": 720,
+      "bytes": 219410,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "we-were-here-together": [
+    {
+      "file": "we-were-here-together.webp",
+      "alt": "Two explorers in red and blue parkas holding walkie-talkies on a snowy wooden bridge, looking at a red flare rising above the Antarctic peaks.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/865360/ss_541cc35fb93e274f24adfb10dcaacaf42401ce28.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/865360/We_Were_Here_Together/",
+      "store": "Steam",
+      "copyright": "Total Mayhem Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 61446,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "we-were-here-together-og.jpg"
+    }
+  ],
+  "plateup": [
+    {
+      "file": "plateup.webp",
+      "alt": "Top-down view of a busy PlateUp! restaurant on Day 15, with four chefs cooking in the kitchen, orange customers waiting at tables, and the player names shown along the bottom.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1599600/ss_833de2e09f19972bb9e7db021c793da6afdab8a0.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1599600/PlateUp/",
+      "store": "Steam",
+      "copyright": "It's happening / Yogscast Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 81140,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "plateup-og.jpg"
+    }
+  ],
+  "coral-island": [
+    {
+      "file": "coral-island.webp",
+      "alt": "Two divers in Coral Island, with the player names “Shei” and “Sisco” over their heads, clearing piles of trash from a sandy seabed surrounded by coral.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158160/bd7687968d68a443554b8ddd275ed8655a5150f4/ss_bd7687968d68a443554b8ddd275ed8655a5150f4.1920x1080.jpg?t=1781768008",
+      "page": "https://store.steampowered.com/app/1158160/Coral_Island/",
+      "store": "Steam",
+      "copyright": "Stairway Games / Balor Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 92266,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "coral-island-og.jpg"
+    }
+  ],
+  "raft": [
+    {
+      "file": "raft.webp",
+      "alt": "Two survivors standing at the edge of a wooden raft in Raft, one with a plastic hook over their shoulder, looking out at open blue sea with floating barrels and a small vegetable plot beside them.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/ss_c22b2ff5ba5609f74e61b5feaa5b7a1d7fd1dbd3.1920x1080.jpg?t=1727184011",
+      "page": "https://store.steampowered.com/app/648800/Raft/",
+      "store": "Steam",
+      "copyright": "Redbeet Interactive / Axolot Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 52760,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "raft-og.jpg"
+    }
+  ],
+  "core-keeper": [
+    {
+      "file": "core-keeper.webp",
+      "alt": "A pixel-art underground base in Core Keeper with rows of planters and machines, one character tending the garden while another paddles a small boat along a glowing blue river beside it.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/bca1feb5ec1bf64543f80c74effdcaed4216033c/ss_bca1feb5ec1bf64543f80c74effdcaed4216033c.1920x1080.jpg?t=1791454740",
+      "page": "https://store.steampowered.com/app/1621690/Core_Keeper/",
+      "store": "Steam",
+      "copyright": "Pugstorm / Fireshine Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 113726,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "core-keeper-og.jpg"
+    }
+  ],
+  "super-mario-bros-wonder": [
+    {
+      "file": "super-mario-bros-wonder.webp",
+      "alt": "Peach, Luigi, Daisy and Mario in their Elephant forms bouncing between green warp pipes in Super Mario Bros. Wonder, with four player icons shown in the top-left corner.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000068688/9669405e5f3f899993cddbc02bd570d530eb39410ed3b50e6bd102381fbe6916",
+      "page": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Nintendo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 88940,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "super-mario-bros-wonder-og.jpg"
+    },
+    {
+      "file": "super-mario-bros-wonder-2.webp",
+      "alt": "Four players, including two Yoshis, ride purple rockets that trail rainbow smoke across a pink sky toward a dark castle in Super Mario Bros. Wonder.",
+      "source": "https://assets.nintendo.com/image/upload/store/software/switch/70010000068688/c77b1b26934fa04c01bbadcd5081b7a2cbfe787f4cd7d8a8e59445f67beb73c3",
+      "page": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+      "store": "Nintendo eShop",
+      "copyright": "Nintendo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 73466,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ]
+    }
+  ],
+  "wingspan": [
+    {
+      "file": "wingspan.webp",
+      "alt": "A wetland habitat row in Wingspan with Tree Swallow, Barn Swallow, Whooping Crane and Golden Eagle cards laid out above a hand of bird and bonus cards.",
+      "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1054490/ss_1b94d6aaf9550715516a0f28a5cfcb76d48cf367.1920x1080.jpg",
+      "page": "https://store.steampowered.com/app/1054490/Wingspan/",
+      "store": "Steam",
+      "copyright": "Monster Couch / Stonemaier Games",
+      "width": 1280,
+      "height": 720,
+      "bytes": 224102,
+      "widths": [
+        400,
+        560,
+        720,
+        960,
+        1280
+      ],
+      "og": "wingspan-og.jpg"
+    },
+    {
+      "kind": "icon",
+      "file": "wingspan-icon.webp",
+      "alt": "Wingspan app icon: a scissor-tailed flycatcher with spread wings and a long forked tail against a blue watercolor sky.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6c/a6/0f/6ca60f5d-79d8-c866-4ad3-d33e710b1c76/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/wingspan-the-board-game/id1459520638",
+      "store": "App Store",
+      "copyright": "Monster Couch / Stonemaier Games",
+      "width": 512,
+      "height": 512,
+      "bytes": 16256,
+      "widths": [
+        128,
+        256,
+        512
+      ]
+    }
+  ],
+  "pokemon-tcg-pocket": [
+    {
+      "file": "pokemon-tcg-pocket-1.webp",
+      "alt": "The share screen in Pokémon TCG Pocket showing a Mega Greninja ex card being sent to a share partner, under the caption “Share cards with your friends!”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/38/cf/80/38cf801b-528e-d3ad-ddb9-ebbf834a4826/C_U30b7_U30ea_U30fc_U30b9_U3099_EN_5.5_U30a4_U30f3_U30c1iPone_8plus__02.jpg/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-tcg-pocket/id6479970832",
+      "store": "App Store",
+      "copyright": "Pokémon / Nintendo / Creatures Inc. / GAME FREAK inc. / DeNA",
+      "width": 619,
+      "height": 1100,
+      "bytes": 52032,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "pokemon-tcg-pocket-2.webp",
+      "alt": "A Fuecoco ex card and a Mew ex card sliding past each other in Pokémon TCG Pocket under the caption “Get the cards you want through trading”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fb/bb/04/fbbb04ff-8e9e-8a40-49bd-488f18371248/C_U30b7_U30ea_U30fc_U30b9_U3099_EN_5.5_U30a4_U30f3_U30c1iPone_8plus__03.jpg/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-tcg-pocket/id6479970832",
+      "store": "App Store",
+      "copyright": "Pokémon / Nintendo / Creatures Inc. / GAME FREAK inc. / DeNA",
+      "width": 619,
+      "height": 1100,
+      "bytes": 58470,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "file": "pokemon-tcg-pocket-3.webp",
+      "alt": "A Pokémon TCG Pocket battle with the player’s Pikachu ex facing an opponent’s Mega Mewtwo X ex, with an Auto toggle and End Turn button, under the caption “Have casual battles in your free time!”.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2a/22/bb/2a22bbba-1674-66c3-3018-9dbdfd9249c6/C_U30b7_U30ea_U30fc_U30b9_U3099_EN_5.5_U30a4_U30f3_U30c1iPone_8plus__06.jpg/1290x0w.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-tcg-pocket/id6479970832",
+      "store": "App Store",
+      "copyright": "Pokémon / Nintendo / Creatures Inc. / GAME FREAK inc. / DeNA",
+      "width": 619,
+      "height": 1100,
+      "bytes": 68248,
+      "widths": [
+        140,
+        220,
+        320,
+        619
+      ]
+    },
+    {
+      "kind": "icon",
+      "file": "pokemon-tcg-pocket-icon.webp",
+      "alt": "Pokémon TCG Pocket app icon: the back of a Pokémon card with a Poké Ball on a blue swirl, tilted against a rainbow background.",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/36/be/cc36be7e-34a8-367e-5ebb-343175027e2a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1024x1024bb.png",
+      "page": "https://apps.apple.com/us/app/pok%C3%A9mon-tcg-pocket/id6479970832",
+      "store": "App Store",
+      "copyright": "Pokémon / Nintendo / Creatures Inc. / GAME FREAK inc. / DeNA",
+      "width": 512,
+      "height": 512,
+      "bytes": 25140,
+      "widths": [
+        128,
+        256,
+        512
+      ]
+    }
   ]
 }

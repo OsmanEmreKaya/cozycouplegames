@@ -48,6 +48,9 @@ export const categories: Category[] = [
       'disney-dreamlight-valley',
       'sky-children-of-the-light',
       'unravel-two',
+      'coral-island',
+      'haven',
+      'core-keeper',
     ],
     lookFor: [
       { title: 'Low pressure', text: 'No harsh fail states, so a newer player never feels like they’re “ruining it.”' },
@@ -82,7 +85,7 @@ export const categories: Category[] = [
       'We only include games with real shared play. Many popular “couple games” on the App Store and Google Play are quizzes or single-player apps with a shared leaderboard.',
       'Before you install anything, check two things: whether you’re both on iPhone or one of you is on Android, and whether you want something calm or a bit competitive. The cards below show both.',
     ],
-    games: ['our-flower-garden', 'sky-children-of-the-light', 'minecraft', 'gamepigeon', 'words-with-friends', 'uno-mobile', 'pokemon-go'],
+    games: ['our-flower-garden', 'sky-children-of-the-light', 'minecraft', 'gamepigeon', 'words-with-friends', 'uno-mobile', 'pokemon-go', 'pokemon-tcg-pocket', 'wingspan'],
     lookFor: [
       { title: 'Real multiplayer', text: 'A shared world or shared progress, not just a leaderboard.' },
       { title: 'iPhone + Android', text: 'If you’re on different phones, check cross-platform support first. iMessage games like GamePigeon only work between iPhones.' },
@@ -95,7 +98,7 @@ export const categories: Category[] = [
       },
       {
         q: 'Are there couple games that work between iPhone and Android?',
-        a: 'Yes: Our Flower Garden, Sky: Children of the Light, Minecraft (Bedrock), Words With Friends, UNO! and Pokémon GO all work across both.',
+        a: 'Yes: Our Flower Garden, Sky: Children of the Light, Minecraft (Bedrock), Words With Friends, UNO!, Pokémon GO, Pokémon TCG Pocket and Wingspan all work across both.',
       },
       {
         q: 'What are the best free phone games for couples?',
@@ -146,6 +149,13 @@ export const categories: Category[] = [
       'moving-out-2',
       'gamepigeon',
       'overcooked-all-you-can-eat',
+      'we-were-here-together',
+      'coral-island',
+      'raft',
+      'core-keeper',
+      'plateup',
+      'wingspan',
+      'pokemon-tcg-pocket',
     ],
     lookFor: [
       { title: 'Asynchronous play', text: 'Games you can progress in separately help a lot across time zones.' },
@@ -156,6 +166,10 @@ export const categories: Category[] = [
       {
         q: 'What’s the best game for long-distance couples in different time zones?',
         a: 'Something asynchronous, like Our Flower Garden, where you each look after the same garden whenever you’re awake.',
+      },
+      {
+        q: 'What’s the best game for a long-distance couple who like puzzles?',
+        a: 'We Were Here Together. You’re split up in a castle and solve puzzles by describing what you see over a walkie-talkie, and it works across PC, PlayStation, Xbox and Switch.',
       },
       {
         q: 'What’s a good free game for a long-distance date night?',
