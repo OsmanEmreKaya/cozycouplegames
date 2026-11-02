@@ -42,6 +42,34 @@ export function CategoryIcon({ kind }: { kind: IconKind }) {
           <circle cx="12" cy="16" r="1.6" fill={ink} />
         </>
       )}
+      {kind === 'switch' && (
+        <>
+          <rect x="7" y="13" width="12" height="30" rx="6" fill="#e8c1be" {...stroke} />
+          <rect x="37" y="13" width="12" height="30" rx="6" fill="#9fb6c0" {...stroke} />
+          <rect x="19" y="13" width="18" height="30" fill="#fffcf7" {...stroke} />
+          <circle cx="13" cy="22" r="2.4" fill="#fffcf7" {...stroke} strokeWidth={1.4} />
+          <circle cx="43" cy="33" r="2.4" fill="#fffcf7" {...stroke} strokeWidth={1.4} />
+          <path d="M28 33c-3-2-4.6-3.6-4.6-5.6 0-1.5 1.1-2.5 2.4-2.5.9 0 1.6.5 2.2 1.3.6-.8 1.3-1.3 2.2-1.3 1.3 0 2.4 1 2.4 2.5 0 2-1.6 3.6-4.6 5.6z" fill="#e8c1be" {...stroke} strokeWidth={1.4} />
+        </>
+      )}
+      {kind === 'playstation' && (
+        <>
+          <path d="M17 18h22a9 9 0 0 1 9 9v4.5a6.5 6.5 0 0 1-11.6 4L34 33H22l-2.4 2.5a6.5 6.5 0 0 1-11.6-4V27a9 9 0 0 1 9-9z" fill="#d6e1cb" {...stroke} />
+          <path d="M18 24v8M14 28h8" {...stroke} />
+          <circle cx="36" cy="24.5" r="1.8" fill="#f2e2ae" {...stroke} strokeWidth={1.2} />
+          <circle cx="40.5" cy="28" r="1.8" fill="#e8c1be" {...stroke} strokeWidth={1.2} />
+          <circle cx="36" cy="31.5" r="1.8" fill="#9fb6c0" {...stroke} strokeWidth={1.2} />
+          <circle cx="31.5" cy="28" r="1.8" fill="#b9c8ae" {...stroke} strokeWidth={1.2} />
+        </>
+      )}
+      {kind === 'desktop' && (
+        <>
+          <rect x="13" y="11" width="30" height="21" rx="3" fill="#fffcf7" {...stroke} />
+          <path d="M7 38h42l-3.5 7h-35z" fill="#e4cdae" {...stroke} />
+          <path d="M23 38h10" {...stroke} strokeWidth={1.4} />
+          <path d="M28 27c-3-2-4.6-3.6-4.6-5.6 0-1.5 1.1-2.5 2.4-2.5.9 0 1.6.5 2.2 1.3.6-.8 1.3-1.3 2.2-1.3 1.3 0 2.4 1 2.4 2.5 0 2-1.6 3.6-4.6 5.6z" fill="#e8c1be" {...stroke} strokeWidth={1.4} />
+        </>
+      )}
     </svg>
   )
 }

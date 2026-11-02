@@ -362,3 +362,7 @@
     gap: 48px;
   }
 }
+
+.cat-grid__sub {
+  margin: 28px 0 14px;
+}

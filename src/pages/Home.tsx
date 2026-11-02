@@ -1,5 +1,5 @@
 import { games, getGame, gamesBySlugs } from '../data/games'
-import { featuredCategories, moods } from '../data/categories'
+import { featuredCategories, moods, platformCategories } from '../data/categories'
 import { guides } from '../data/guides'
 import { Link } from '../lib/router'
 import { HeroArt } from '../components/HeroArt'
@@ -66,6 +66,12 @@ export function Home() {
           <div className="grid cat-grid">
             {featuredCategories.map((c, i) => (
               <CategoryCard key={c.path} {...c} index={i} />
+            ))}
+          </div>
+          <p className="section-head__eyebrow cat-grid__sub">or by what you play on</p>
+          <div className="grid three-up">
+            {platformCategories.map((c, i) => (
+              <CategoryCard key={c.path} name={c.name} path={c.path} line={c.cardLine} icon={c.icon} tint={c.tint} index={i + 1} />
             ))}
           </div>
         </div>

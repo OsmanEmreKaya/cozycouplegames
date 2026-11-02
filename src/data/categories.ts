@@ -1,6 +1,7 @@
-import type { MoodSlug } from './types'
+import type { MoodSlug, Platform } from './types'
+import { games } from './games'
 
-export type IconKind = 'hearts' | 'sprout' | 'phone' | 'moon'
+export type IconKind = 'hearts' | 'sprout' | 'phone' | 'moon' | 'switch' | 'playstation' | 'desktop'
 export type Tint = 'blush' | 'sage' | 'peach' | 'sky'
 
 export interface Category {
@@ -21,7 +22,16 @@ export interface Category {
   guides: string[]
   /** The game we recommend most on this page, shown above the list with store badges. */
   spotlight?: { game: string; note: string }
+  /** Set on platform pages (Switch, PS5, PC), whose game lists are derived from each review's platforms. */
+  platform?: Platform
 }
+
+/** Every reviewed game on a platform, best-for-couples first. */
+const onPlatform = (platform: Platform) =>
+  [...games]
+    .filter((g) => g.platforms.includes(platform))
+    .sort((a, b) => b.coupleScore - a.coupleScore || b.rating - a.rating)
+    .map((g) => g.slug)
 
 export const categories: Category[] = [
   {
@@ -179,7 +189,151 @@ export const categories: Category[] = [
     guides: ['best-mobile-games-for-long-distance-couples', 'date-night-games-for-couples'],
     spotlight: { game: 'our-flower-garden', note: 'our pick for different time zones' },
   },
+  {
+    slug: 'switch-games',
+    path: '/switch-games',
+    name: 'Switch Games',
+    h1: 'Switch games for couples',
+    seoTitle: 'Best Nintendo Switch Games for Couples (2 Player)',
+    description:
+      'The best two-player Nintendo Switch games for couples: couch co-op on one console, online picks for long distance, and which ones need Switch Online.',
+    cardLine: 'One console, a Joy-Con each.',
+    icon: 'switch',
+    tint: 'blush',
+    platform: 'Switch',
+    intro: [
+      'The Switch is the easiest console to share. Slide off the Joy-Con and you have two controllers, prop up the kickstand and you have a screen anywhere in the house. A lot of the best couple games started here or found their audience here.',
+      'Every game below is one we’ve reviewed for two people, sorted by how well it works as a couple’s game. Most play on one console. The ones that don’t, like Sky: Children of the Light and Palia, are online worlds where you each need your own Switch, or a phone or PC on the other end.',
+      'Everything here also runs on Switch 2. A few games, including Super Mario Bros. Wonder, Valheim and Core Keeper, have Switch 2 editions or upgrades, and Split Fiction is Switch 2 only. We mention it in each review where it matters.',
+    ],
+    games: onPlatform('Switch'),
+    lookFor: [
+      { title: 'A single Joy-Con each', text: 'Snipperclips, Mario Kart, Mario Wonder, Overcooked and PICO PARK all work with one Joy-Con per player, so there’s nothing extra to buy.' },
+      { title: 'Split-screen or shared screen', text: 'Stardew Valley and It Takes Two split the screen; Snipperclips and Mario Wonder share it. Both work, but shared-screen games keep you closer.' },
+      { title: 'Switch Online only when you need it', text: 'Playing on one console never needs a subscription. Online play in paid games does, and Animal Crossing island visits do too.' },
+    ],
+    faq: [
+      {
+        q: 'What are the best 2-player Switch games for couples?',
+        a: 'On one Switch: It Takes Two, Snipperclips, Super Mario Bros. Wonder, Overcooked! All You Can Eat and Mario Kart 8 Deluxe. For a calmer evening, Stardew Valley or Spiritfarer. Every game on this page is reviewed for how well it works for two.',
+      },
+      {
+        q: 'Can we play together with just one Switch?',
+        a: 'Yes. Most of these support two players on one console, and many only need one Joy-Con each: Snipperclips, Mario Kart 8 Deluxe, Super Mario Bros. Wonder, Overcooked and PICO PARK. Stardew Valley, It Takes Two and Portal 2 play split-screen on one Switch. Sky: Children of the Light and Palia are the exceptions, since they’re online worlds where you each need your own device.',
+      },
+      {
+        q: 'Do we need Nintendo Switch Online to play together?',
+        a: 'Not on one console. You need it for online play in paid games such as Mario Kart 8 Deluxe, Overcooked, Moving Out 2 and Stardew Valley, and for visiting each other’s islands in Animal Crossing. Free-to-start games like Sky: Children of the Light don’t require it.',
+      },
+      {
+        q: 'Do these games work on Switch 2?',
+        a: 'Yes. Switch 2 plays Switch games, and several of these have Switch 2 editions or upgrades: Super Mario Bros. Wonder, Valheim and Core Keeper. Split Fiction is a Switch 2 game and doesn’t run on the original Switch.',
+      },
+      {
+        q: 'Which Switch games can we play with a long-distance partner?',
+        a: 'Stardew Valley, Minecraft, Overcooked! All You Can Eat, Moving Out 2, Palia, Sky: Children of the Light, Core Keeper, PlateUp!, We Were Here Together and Wingspan all have online play on Switch. If your partner isn’t on a Switch, pick one with crossplay: Minecraft, Sky, Moving Out 2, Palia, Overcooked, Wingspan or We Were Here Together.',
+      },
+    ],
+    guides: ['date-night-games-for-couples', 'christmas-games-for-couples'],
+  },
+  {
+    slug: 'ps5-games',
+    path: '/ps5-games',
+    name: 'PS5 Games',
+    h1: 'PS5 games for couples',
+    seoTitle: 'Best PS5 Games for Couples (Couch Co-op & Online)',
+    description:
+      'The best PlayStation 5 games for couples: split-screen co-op on one PS5, online picks with PS Plus, and the games where one copy covers you both.',
+    cardLine: 'Split-screen nights and one-copy co-op.',
+    icon: 'playstation',
+    tint: 'sky',
+    platform: 'PlayStation',
+    intro: [
+      'The PlayStation 5 has the two best couple games of the last few years, It Takes Two and Split Fiction, and both come with a Friend’s Pass, so one copy is enough for two of you to play online. On one console, almost everything here runs split-screen with two controllers.',
+      'This page lists every game we’ve reviewed that plays on PS5, including PS4 games that run on it, sorted by how well each works for a couple. Where a game is online only, or needs PlayStation Plus, the review says so.',
+      'If your partner plays on something else, look for the crossplay games: Valheim, Sea of Thieves, Moving Out 2, Raft, Coral Island, Minecraft, Palia and Sky all connect a PS5 to a PC, Xbox or Switch.',
+    ],
+    games: onPlatform('PlayStation'),
+    lookFor: [
+      { title: 'Friend’s Pass', text: 'It Takes Two, Split Fiction and A Way Out let a second PlayStation join online with a free download. You buy one copy, not two.' },
+      { title: 'Two controllers', text: 'Couch co-op on a PS5 means a second DualSense. It’s the one purchase that unlocks most of this page.' },
+      { title: 'PS Plus for online', text: 'Online play in paid games needs PlayStation Plus. Couch co-op on one console never does, and neither do free-to-play games like Sky and Palia.' },
+    ],
+    faq: [
+      {
+        q: 'Is It Takes Two on PS5?',
+        a: 'Yes. There’s a native PS5 version, and with the Friend’s Pass only one of you needs to buy it to play online with another PlayStation. On one PS5 it’s split-screen with two controllers.',
+      },
+      {
+        q: 'What are the best couch co-op PS5 games for couples?',
+        a: 'It Takes Two, Split Fiction, A Way Out, Unravel Two, Overcooked! All You Can Eat, Lovers in a Dangerous Spacetime, Moving Out 2 and Haven all play on one PS5 with two controllers. Stardew Valley and Portal-style puzzle games are split-screen too.',
+      },
+      {
+        q: 'Do we need PlayStation Plus to play together?',
+        a: 'Not for couch co-op on one console. You need it for online play in paid games, including Friend’s Pass games like It Takes Two. Free-to-play games such as Sky: Children of the Light and Palia don’t require PS Plus for online play.',
+      },
+      {
+        q: 'Do PS4 co-op games work on PS5?',
+        a: 'Yes. A Way Out, Unravel Two, Overcooked! All You Can Eat and Haven are PS4 titles that play on PS5, and several have free PS5 versions or upgrades. You still need two controllers for couch co-op.',
+      },
+      {
+        q: 'Can we play PS5 games with a partner on PC, Xbox or Switch?',
+        a: 'In some. Valheim, Sea of Thieves, Moving Out 2, Raft, Coral Island, Minecraft, Sky: Children of the Light, Palia, Disney Dreamlight Valley, Split Fiction, We Were Here Together and Wingspan support crossplay. Stardew Valley and Don’t Starve Together don’t, so you’d both need a PlayStation.',
+      },
+    ],
+    guides: ['date-night-games-for-couples', 'valentines-day-games-for-couples'],
+  },
+  {
+    slug: 'pc-games',
+    path: '/pc-games',
+    name: 'PC Games',
+    h1: 'PC games for couples',
+    seoTitle: 'Best PC Games for Couples (Steam Co-op & Remote Play)',
+    description:
+      'The best PC and Steam games for couples: co-op on two laptops, couch games played online with Remote Play Together, and the cheapest ways to get two copies.',
+    cardLine: 'Two laptops, one world.',
+    icon: 'desktop',
+    tint: 'sage',
+    platform: 'PC',
+    intro: [
+      'Most of the games on this site started on PC, and Steam is still the cheapest place to buy them, especially during sales. It’s also where two-person play is most flexible: two laptops in the same room, a desktop and a laptop in different cities, or one PC and one controller on the couch.',
+      'Every game below is one we’ve reviewed for couples and that runs on Windows, sorted by how well it works for two. We note which ones also run on a Mac, and which need two copies.',
+      'One PC trick worth knowing: Steam Remote Play Together streams a couch co-op game to your partner’s computer, so games with no online mode, like Unravel Two, Cuphead and Lovers in a Dangerous Spacetime, can still be played apart with a single copy.',
+    ],
+    games: onPlatform('PC'),
+    lookFor: [
+      { title: 'Remote Play Together', text: 'Turns any local co-op game into an online one, with one copy. It needs a decent connection on both ends and works best with a controller.' },
+      { title: 'One copy or two', text: 'It Takes Two, Split Fiction and A Way Out include a Friend’s Pass. Most others need a copy each, so watch for Steam sales and two-packs.' },
+      { title: 'Runs on a laptop', text: 'Stardew Valley, Core Keeper, PICO PARK, Wingspan and We Were Here Together run on almost anything. Valheim and Sea of Thieves want a proper graphics card.' },
+    ],
+    faq: [
+      {
+        q: 'What are the best Steam games for couples?',
+        a: 'It Takes Two and Split Fiction for a story, Stardew Valley and Coral Island for a shared farm, Portal 2 and We Were Here Together for puzzles, Overcooked! All You Can Eat and PlateUp! for chaos, and Valheim, Raft or Core Keeper for building. All of them are on Steam.',
+      },
+      {
+        q: 'Can we play couch co-op PC games online with one copy?',
+        a: 'Often, yes. Steam Remote Play Together streams a local co-op game to your partner’s PC so they can join with their own controller, and only the host needs to own the game. It works well for Unravel Two, Lovers in a Dangerous Spacetime, Cuphead and Haven. It Takes Two, Split Fiction and A Way Out use their own Friend’s Pass instead.',
+      },
+      {
+        q: 'Which of these run on a Mac?',
+        a: 'Stardew Valley, Minecraft, Spiritfarer, Don’t Starve Together, Disney Dreamlight Valley, Lovers in a Dangerous Spacetime, Cuphead, Valheim, We Were Here Together and Wingspan have Mac versions. The rest are Windows only.',
+      },
+      {
+        q: 'Which PC games for couples work with a partner on a console?',
+        a: 'Minecraft, Sky: Children of the Light, Palia, Disney Dreamlight Valley, Overcooked! All You Can Eat, Moving Out 2, Valheim, Sea of Thieves, Raft, Coral Island, Split Fiction, We Were Here Together and Wingspan all have crossplay between PC and at least one console. Stardew Valley, Portal 2 and PICO PARK don’t.',
+      },
+      {
+        q: 'What’s a good PC game for a partner who doesn’t play games?',
+        a: 'PICO PARK, Overcooked! All You Can Eat or Stardew Valley. Keyboard and mouse is awkward for most co-op games, so a second controller is the best thing you can buy for playing together on a PC.',
+      },
+    ],
+    guides: ['best-cozy-games-for-couples', 'best-free-games-for-couples'],
+  },
 ]
+
+/** The platform pages, shown as a second row on the homepage. */
+export const platformCategories = categories.filter((c) => c.platform)
 
 /** The four homepage entry points. "Games for Couples" is the full review index. */
 export const featuredCategories: { name: string; path: string; line: string; icon: IconKind; tint: Tint }[] = [
@@ -190,7 +344,9 @@ export const featuredCategories: { name: string; path: string; line: string; ico
     icon: 'hearts',
     tint: 'blush',
   },
-  ...categories.map((c) => ({ name: c.name === 'Long Distance' ? 'Long Distance Games' : c.name, path: c.path, line: c.cardLine, icon: c.icon, tint: c.tint })),
+  ...categories
+    .filter((c) => !c.platform)
+    .map((c) => ({ name: c.name === 'Long Distance' ? 'Long Distance Games' : c.name, path: c.path, line: c.cardLine, icon: c.icon, tint: c.tint })),
 ]
 
 export const getCategory = (path: string) => categories.find((c) => c.path === path)
