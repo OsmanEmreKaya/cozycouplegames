@@ -106,6 +106,10 @@ export const categories: Category[] = [
         a: 'Minecraft and Sky are great side by side. GamePigeon and UNO! are good for quick rounds, and Our Flower Garden for a few calm minutes before bed.',
       },
       {
+        q: 'What are some fun phone games to play with your partner?',
+        a: 'For a laugh, UNO! and GamePigeon. For something you both build over time, Our Flower Garden or Minecraft. For a slow game that runs all week, Words With Friends. All of them are on this page, with notes on which phones they work on.',
+      },
+      {
         q: 'What about phone games for long-distance couples?',
         a: 'We have a separate guide to phone games for long-distance couples, with picks for different time zones and video-call dates.',
       },

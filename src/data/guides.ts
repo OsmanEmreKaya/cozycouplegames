@@ -218,24 +218,47 @@ export const guides: Guide[] = [
   },
   {
     slug: 'best-free-games-for-couples',
-    title: 'Best Free Games for Couples ({year})',
+    title: '{n} Best Free Games for Couples ({year})',
     description:
       'The best free games for couples on iPhone, Android, PC and consoles: shared gardens, cozy online worlds and chat games that never push you to pay.',
     excerpt: 'Great games for two that don’t cost a thing to start.',
     kicker: 'Free',
     published: '2026-10-05',
-    updated: '2026-10-05',
+    updated: '2026-11-02',
     art: 'meadow',
     intro: [
-      'Free games have a reputation for nagging you to pay. You can enjoy all of these without spending anything.',
+      'Free games have a reputation for nagging you to pay. Every game on this list is genuinely free to download and play together, and we’ve played each one as a couple without spending anything.',
+      'Most of them are phone games, because that’s where the good free couple games live: a shared garden you both tend, a word game that runs for weeks, a card game for a quick round on a call. Palia is the exception, a full cozy online world that’s free on PC and consoles.',
+      'For each pick we say what “free” really means (ads, optional purchases, or nothing at all) and whether it works between an iPhone and an Android phone, since that’s the first thing that rules a game out for a lot of couples.',
     ],
     picks: [
-      { game: 'our-flower-garden', heading: 'Best free cozy game', note: 'A shared garden on iPhone and Android. Optional purchases, zero pressure.' },
-      { game: 'sky-children-of-the-light', heading: 'Best free adventure', note: 'Beautiful, cross-platform and full of small romantic gestures.' },
-      { game: 'palia', heading: 'Best free farming', note: 'A big cozy online world, free on PC and consoles.' },
-      { game: 'gamepigeon', heading: 'Best free chat game', note: 'Small games in your iMessage chat, ideal for busy days.' },
+      { game: 'our-flower-garden', heading: 'Best free cozy game', note: 'A shared garden on iPhone and Android. Optional purchases, no ads, zero pressure.' },
+      { game: 'sky-children-of-the-light', heading: 'Best free adventure', note: 'Beautiful, cross-platform and full of small romantic gestures. Free on phones, Switch, PlayStation and PC.' },
+      { game: 'palia', heading: 'Best free farming', note: 'A big cozy online world, free on PC and consoles. Only cosmetics cost money.' },
+      { game: 'words-with-friends', heading: 'Best free game for different phones', note: 'A slow Scrabble-style game between iPhone and Android. Ads in the free version, but the board itself costs nothing.' },
+      { game: 'uno-mobile', heading: 'Best free game for a call', note: 'Live rounds of UNO with your own house rules. Ignore the offers and play friends games.' },
+      { game: 'gamepigeon', heading: 'Best free chat game', note: 'Small games in your iMessage chat, ideal for busy days. iPhone only.' },
+      { game: 'pokemon-go', heading: 'Best free game for visits', note: 'Daily gifts from where your partner is, and a great walking date when you’re together. No ads.' },
     ],
-    outro: 'Start with one of these before buying anything. You’ll learn quickly what kind of games you like playing together.',
+    faq: [
+      {
+        q: 'What are the best free games for long-distance couples?',
+        a: 'Our Flower Garden and Sky: Children of the Light give you a shared world to meet in, Words With Friends and GamePigeon keep a turn-based game going across time zones, and UNO! is good for a live round on a video call. All of them are free.',
+      },
+      {
+        q: 'Which free couple games work between iPhone and Android?',
+        a: 'Our Flower Garden, Sky: Children of the Light, Words With Friends, UNO! and Pokémon GO all work across both. GamePigeon is iPhone only, because it runs inside iMessage.',
+      },
+      {
+        q: 'Are these free games really free, or full of ads?',
+        a: 'Our Flower Garden, Sky, Palia and Pokémon GO have no ads, just optional purchases you can ignore. Words With Friends and UNO! show ads between rounds in their free versions. GamePigeon has ads and an optional premium upgrade.',
+      },
+      {
+        q: 'Is there a free version of Stardew Valley or It Takes Two?',
+        a: 'No. Both are paid games, though It Takes Two includes a Friend’s Pass so only one of you needs to buy it. Palia is the closest free alternative to Stardew Valley.',
+      },
+    ],
+    outro: 'Start with one of these before buying anything. You’ll learn quickly what kind of games you like playing together, and if you want a paid step up, It Takes Two only needs one copy for two players.',
   },
   {
     slug: 'valentines-day-games-for-couples',

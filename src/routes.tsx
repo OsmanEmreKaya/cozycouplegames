@@ -264,6 +264,7 @@ export function resolveRoute(path: string): ResolvedRoute {
               '@type': 'Article',
               headline: title,
               description: guide.description,
+              image: [absoluteUrl(SITE.defaultImage)],
               url: absoluteUrl(path),
               datePublished: guide.published,
               dateModified: guide.updated,
